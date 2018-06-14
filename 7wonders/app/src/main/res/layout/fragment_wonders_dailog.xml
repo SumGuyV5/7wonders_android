@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="@string/username" />
+
+    <Spinner
+        android:id="@+id/spinnerUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/textViewWonderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="@string/wondername" />
+
+    <Spinner
+        android:id="@+id/spinnerWonderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ToggleButton
+            android:id="@+id/toggleButtonStage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stage1" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonStage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stage2" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonStage3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stage3" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonStage4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stage4" />
+    </LinearLayout>
+
+</LinearLayout>
+

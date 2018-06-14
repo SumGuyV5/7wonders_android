@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">7 Wonders</string>
+    <string name="more">More</string>
+    <string name="past_players">Past Players</string>
+    <string name="delete_players">Delete Players</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="go">GO</string>
+    <string name="reset">RESET</string>
+    <string name="score">Score</string>
+    <string name="action_settings">Settings</string>
+    <string name="playerCount">How many players?</string>
+    <string name="zero">0</string>
+    <string name="name">Name</string>
+    <string name="military">Military</string>
+    <string name="money">Money</string>
+    <string name="wonder">Wonder</string>
+    <string name="civilian">Civilian</string>
+    <string name="commercial">Commercial</string>
+    <string name="guild">Guild</string>
+    <string name="science">Science</string>
+    <string name="leaders">Leaders</string>
+    <string name="cities">Cities</string>
+    <string name="debt">Debt</string>
+    <string name="total">Total</string>
+    <string name="back">Back</string>
+    <string name="sciencehelp">Science Help</string>
+    <string name="title_add_players">Add Players</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="science_calculator_dailog">Science Calculator</string>
+    <string name="past_players_dailog">Past Players</string>
+    <string name="reorder">Reorder Players</string>
+    <string name="close">Close</string>
+    <string name="military_dailog">Military</string>
+    <string name="vs">VS</string>
+    <string name="username">User Name</string>
+    <string name="wondername">Wonder Name</string>
+    <string name="next">Next</string>
+    <string name="done">Done</string>
+    <string name="enter_name">Enter name:</string>
+    <string name="new_player">New Player</string>
+    <string name="stage1">Stage 1</string>
+    <string name="stage2">Stage 2</string>
+    <string name="stage3">Stage 3</string>
+    <string name="stage4">Stage 4</string>
+
+    <string name="age1">Age I</string>
+    <string name="age2">Age II</string>
+    <string name="age3">Age III</string>
+
+    <string-array name="number_arrays">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string name="tie">Tie</string>
+
+    <string name="title_activity_player_score_card">PlayerScoreCardActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_sortable_list_view">SortableListViewActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+
+</resources>

@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context="com.richardallenonline.wonders.PlayerCountActivity$PlaceholderFragment" >
+
+    <TextView
+        style="@style/TextView"
+    	android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/playerCount" />
+    
+    <RadioGroup
+        android:id="@+id/radioGroupPlayerCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/two" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/three" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/four" />
+        
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/five" />
+        
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/six" />
+        
+        <RadioButton
+            android:id="@+id/radio5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seven" />
+        
+        <RadioButton
+            android:id="@+id/radio6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eight" />
+        
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonGO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go"
+        android:onClick="goButton" />
+    
+    <Button
+        android:id="@+id/buttonPastPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/past_players"
+        android:onClick="pastPlayersButton" />
+    
+    <Button
+        android:id="@+id/buttonDeletePlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_players"
+        android:onClick="deletePlayersButton" />
+
+</LinearLayout>

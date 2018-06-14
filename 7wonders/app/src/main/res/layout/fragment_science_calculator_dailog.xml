@@ -1,0 +1,244 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:orientation="vertical"
+    tools:context="com.richardallenonline.wonders.ui.Dialog.ScienceCalculatorDialogFragment" >
+
+	<LinearLayout
+		style="@style/AppLayout"
+        android:orientation="horizontal" >
+
+		<LinearLayout
+	        style="@style/AppLayout"
+	        android:orientation="vertical" >
+	        
+	        <ImageView
+	            style="@style/AppLayout"
+		        android:id="@+id/imageViewTablet"
+		        android:src="@drawable/tablet"
+		        android:onClick="imagePress" />
+	        <Space
+	  			android:layout_width="4dp"
+	  			android:layout_height="4dp" />
+	        
+	        <kankan.wheel.widget.WheelView
+	            style="@style/AppLayout"
+	            android:id="@+id/wheelTablet"
+				android:layout_height="150dp"
+				android:layout_width="fill_parent" />
+	    </LinearLayout>
+	    <Space
+  			android:layout_width="2dp"
+  			android:layout_height="2dp" />
+	    <LinearLayout
+	        style="@style/AppLayout"
+	        android:orientation="vertical" >
+	        
+	        <ImageView
+	            style="@style/AppLayout"
+		        android:id="@+id/imageViewGear"
+		        android:src="@drawable/gear"
+		        android:onClick="imagePress" />
+	        <Space
+	  			android:layout_width="4dp"
+	  			android:layout_height="4dp" />
+	        
+	        <kankan.wheel.widget.WheelView
+	            style="@style/AppLayout"
+	            android:id="@+id/wheelGear"
+				android:layout_height="150dp"
+				android:layout_width="fill_parent" />
+	        
+	    </LinearLayout>
+	    <Space
+  			android:layout_width="2dp"
+  			android:layout_height="2dp" />
+	    <LinearLayout
+	        style="@style/AppLayout"
+	        android:orientation="vertical" >
+	        
+	        <ImageView
+	            style="@style/AppLayout"
+		        android:id="@+id/imageViewCompass"
+		        android:src="@drawable/compass"
+		        android:onClick="imagePress" />
+	        
+	        <Space
+	  			android:layout_width="4dp"
+	  			android:layout_height="4dp" />
+	        
+	        <kankan.wheel.widget.WheelView
+	            style="@style/AppLayout"
+	            android:id="@+id/wheelCompass"
+				android:layout_height="150dp"
+				android:layout_width="fill_parent" />
+	        
+	        
+	    </LinearLayout>
+	    
+	    <Space
+	  			android:layout_width="2dp"
+	  			android:layout_height="2dp" />
+	    
+	    <LinearLayout
+	        style="@style/AppLayout"
+	        android:orientation="vertical" >
+	        <LinearLayout 
+	            style="@style/AppLayout"
+	        	android:orientation="horizontal" >
+		        <ImageView
+		            style="@style/AppLayout"
+			        android:id="@+id/imageViewTabletWild"
+			        android:src="@drawable/tablet"
+			        android:onClick="imagePress" />
+		        <ImageView
+		            style="@style/AppLayout"
+			        android:id="@+id/imageViewSlash1"
+			        android:src="@drawable/slash"
+			        android:onClick="imagePress" />
+		        <ImageView
+		            style="@style/AppLayout"
+			        android:id="@+id/imageViewGearWild"
+			        android:src="@drawable/gear"
+			        android:onClick="imagePress" />
+		        <ImageView
+		            style="@style/AppLayout"
+			        android:id="@+id/imageViewSlash2"
+			        android:src="@drawable/slash"
+			        android:onClick="imagePress" />
+		        <ImageView
+		            style="@style/AppLayout"
+			        android:id="@+id/imageViewCompassWild"
+			        android:src="@drawable/compass"
+			        android:onClick="imagePress" />
+	        </LinearLayout>
+	        <kankan.wheel.widget.WheelView
+		            style="@style/AppLayout"
+		            android:id="@+id/wheelWild"
+					android:layout_height="150dp"
+					android:layout_width="fill_parent" />
+	        
+	    </LinearLayout>
+	</LinearLayout>
+	
+    <LinearLayout
+        style="@style/AppLayout"
+        android:orientation="horizontal" >
+
+	    <Button
+	        style="@style/AppLayout"
+	        android:id="@+id/buttonGO"
+	        android:text="@string/go" 
+	        android:onClick="goButton" />
+	    
+	    <Button
+	        style="@style/AppLayout"
+	        android:id="@+id/buttonRESET"
+	        android:text="@string/reset" 
+	        android:onClick="resetButton" />
+	</LinearLayout>
+	<LinearLayout
+		style="@style/AppLayout"
+		android:id="@+id/linearLayout1"
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:padding="0dp"
+		android:visibility="gone" >
+
+		<LinearLayout
+			style="@style/AppLayout"
+	        android:orientation="vertical"
+	        android:padding="20dp" >
+	        
+	        <ImageView
+	            style="@style/AppLayout"
+		        android:id="@+id/imageView5"
+		        android:src="@drawable/tablet" />
+	        
+	        <TextView
+		        style="@style/TextView"
+		        android:id="@+id/textViewTablet" />	                
+		    
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        style="@style/AppLayout"
+	        android:orientation="vertical"
+	        android:padding="20dp" >
+	        
+	        <ImageView
+	            style="@style/AppLayout"
+		        android:id="@+id/imageView6"
+		        android:src="@drawable/gear" />
+	        
+	        <TextView
+		        style="@style/TextView"
+		        android:id="@+id/textViewGear" />
+		    
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        style="@style/AppLayout"
+	        android:orientation="vertical"
+	        android:padding="20dp" >
+	        
+	        <ImageView
+	            style="@style/AppLayout"
+		        android:id="@+id/imageView7"
+		        android:src="@drawable/compass" />
+	        
+	        <TextView
+		        style="@style/TextView"
+		        android:id="@+id/textViewCompass" />
+		    
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        style="@style/AppLayout"
+	        android:orientation="vertical"
+	        android:padding="20dp" >
+	      
+	        <LinearLayout 
+	            style="@style/AppLayout"
+				android:layout_width="wrap_content"
+	        	android:orientation="horizontal" >
+		        <ImageView
+		            style="@style/AppLayout"
+			        android:id="@+id/imageViewTabletWildCal"
+			        android:src="@drawable/tablet" />
+		        <ImageView
+		            style="@style/AppLayout"
+			        android:id="@+id/imageViewSlash1Cal"
+			        android:src="@drawable/slash" />
+		        <ImageView
+		            style="@style/AppLayout"
+			        android:id="@+id/imageViewGearWildCal"
+			        android:src="@drawable/gear" />
+		        <ImageView
+		            style="@style/AppLayout"
+			        android:id="@+id/imageViewSlash2Cal"
+			        android:src="@drawable/slash" />
+		        <ImageView
+		            style="@style/AppLayout"
+			        android:id="@+id/imageViewCompassWildCal"
+			        android:src="@drawable/compass" />
+	        </LinearLayout>
+	        
+	        <TextView
+		        style="@style/TextView"
+		        android:id="@+id/textViewWild" />
+		   
+	    </LinearLayout>
+	</LinearLayout>   
+	<TextView
+        style="@style/TextView"
+        android:id="@+id/textViewScore" />
+	
+	 <Button
+	        style="@style/AppLayout"
+	        android:id="@+id/buttonBack"
+	        android:text="@string/back" 
+	        android:onClick="backButton" />
+
+</LinearLayout>

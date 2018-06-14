@@ -1,0 +1,288 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context="com.richardallenonline.wonders.ScoreCardActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        style="@style/AppLayout"
+        android:id="@+id/layoutAGES">
+        
+        <ImageView
+            style="@style/ImageView"
+	        android:id="@+id/imageViewAge1"
+	        android:src="@drawable/age1"
+	        android:onClick="imagePress" />
+        
+        <ImageView
+            style="@style/ImageView"
+	        android:id="@+id/imageViewAge2"
+	        android:src="@drawable/age2"
+	        android:onClick="imagePress" />
+        
+        <ImageView
+            style="@style/ImageView"
+	        android:id="@+id/imageViewAge3"
+	        android:src="@drawable/age3"
+	        android:onClick="imagePress" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/AppLayout"
+        android:id="@+id/layoutPlayer1"
+        android:layout_width="match_parent" >        
+
+        <EditText
+            style="@style/AppLayout"
+            android:id="@+id/editTextPlayer1"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+        
+        <TextView
+            style="@style/TextView"
+            android:id="@+id/textViewPlayer1Score"
+            android:text="@string/zero" />        
+        
+        <Button
+            style="@style/AppLayout"
+            android:id="@+id/buttonPlayer1"
+            android:layout_weight="1"
+            android:text="@string/score"
+            android:onClick="scoreClick" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/AppLayout"
+        android:id="@+id/layoutPlayer2"
+        android:layout_width="match_parent" >        
+
+        <EditText
+            style="@style/AppLayout"
+            android:id="@+id/editTextPlayer2"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+        
+        <TextView
+            style="@style/TextView"
+            android:id="@+id/textViewPlayer2Score"
+            android:text="@string/zero" />        
+        
+        <Button
+            style="@style/AppLayout"
+            android:id="@+id/buttonPlayer2"
+            android:layout_weight="1"
+            android:text="@string/score"
+            android:onClick="scoreClick" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/AppLayout"
+        android:id="@+id/layoutPlayer3"
+        android:layout_width="match_parent" >        
+
+        <EditText
+            style="@style/AppLayout"
+            android:id="@+id/editTextPlayer3"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+        
+        <TextView
+            style="@style/TextView"
+            android:id="@+id/textViewPlayer3Score"
+            android:text="@string/zero" />        
+        
+        <Button
+            style="@style/AppLayout"
+            android:id="@+id/buttonPlayer3"
+            android:layout_weight="1"
+            android:text="@string/score"
+            android:onClick="scoreClick" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/AppLayout"
+        android:id="@+id/layoutPlayer4"
+        android:layout_width="match_parent" >        
+
+        <EditText
+            style="@style/AppLayout"
+            android:id="@+id/editTextPlayer4"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+        
+        <TextView
+            style="@style/TextView"
+            android:id="@+id/textViewPlayer4Score"
+            android:text="@string/zero" />        
+        
+        <Button
+            style="@style/AppLayout"
+            android:id="@+id/buttonPlayer4"
+            android:layout_weight="1"
+            android:text="@string/score"
+            android:onClick="scoreClick" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/AppLayout"
+        android:id="@+id/layoutPlayer5"
+        android:layout_width="match_parent" >        
+
+        <EditText
+            style="@style/AppLayout"
+            android:id="@+id/editTextPlayer5"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+        
+        <TextView
+            style="@style/TextView"
+            android:id="@+id/textViewPlayer5Score"
+            android:text="@string/zero" />        
+        
+        <Button
+            style="@style/AppLayout"
+            android:id="@+id/buttonPlayer5"
+            android:layout_weight="1"
+            android:text="@string/score"
+            android:onClick="scoreClick" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/AppLayout"
+        android:id="@+id/layoutPlayer6"
+        android:layout_width="match_parent" >        
+
+        <EditText
+            style="@style/AppLayout"
+            android:id="@+id/editTextPlayer6"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+        
+        <TextView
+            style="@style/TextView"
+            android:id="@+id/textViewPlayer6Score"
+            android:text="@string/zero" />        
+        
+        <Button
+            style="@style/AppLayout"
+            android:id="@+id/buttonPlayer6"
+            android:layout_weight="1"
+            android:text="@string/score"
+            android:onClick="scoreClick" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/AppLayout"
+        android:id="@+id/layoutPlayer7"
+        android:layout_width="match_parent" >        
+
+        <EditText
+            style="@style/AppLayout"
+            android:id="@+id/editTextPlayer7"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+        
+        <TextView
+            style="@style/TextView"
+            android:id="@+id/textViewPlayer7Score"
+            android:text="@string/zero" />        
+        
+        <Button
+            style="@style/AppLayout"
+            android:id="@+id/buttonPlayer7"
+            android:layout_weight="1"
+            android:text="@string/score"
+            android:onClick="scoreClick" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/AppLayout"
+        android:id="@+id/layoutPlayer8"
+        android:layout_width="match_parent" >        
+
+        <EditText
+            style="@style/AppLayout"
+            android:id="@+id/editTextPlayer8"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+        
+        <TextView
+            style="@style/TextView"
+            android:id="@+id/textViewPlayer8Score"
+            android:text="@string/zero" />        
+        
+        <Button
+            style="@style/AppLayout"
+            android:id="@+id/buttonPlayer8"
+            android:layout_weight="1"
+            android:text="@string/score"
+            android:onClick="scoreClick" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/AppLayout"
+        android:layout_width="match_parent" >
+        
+        <Button
+            style="@style/AppLayout"
+            android:id="@+id/buttonSort"
+            android:layout_weight="1"
+            android:text="@string/reorder"
+            android:onClick="reorderPress" />
+
+        <Button
+            style="@style/AppLayout"
+            android:id="@+id/buttonWonders"
+            android:layout_weight="1"
+            android:text="@string/wonder"
+            android:onClick="wondersPress" />
+        
+    </LinearLayout>
+    
+   
+
+</LinearLayout>
