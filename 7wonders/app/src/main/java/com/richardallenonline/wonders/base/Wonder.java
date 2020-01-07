@@ -118,7 +118,7 @@ public class Wonder {
 		MannekenPisA(26), MannekenPisB(27);
 		
 		private final int value;
-	    private Type(int value) {
+	    Type(int value) {
 	        this.value = value;
 	    }
 

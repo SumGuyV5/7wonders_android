@@ -132,9 +132,7 @@ public class DataSource<T extends Dataset> {
 		if (cursor.isClosed())
 			return true;
 
-		if (cursor.getCount() == 0) // HERE IT CRASHES
-			return true;
-
-		return false;
+		// HERE IT CRASHES
+		return cursor.getCount() == 0;
 	}
 }

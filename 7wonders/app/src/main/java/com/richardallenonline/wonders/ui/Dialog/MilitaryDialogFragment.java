@@ -30,8 +30,8 @@ public class MilitaryDialogFragment extends DialogFragment  {
      * implement this interface in order to receive event callbacks.
      * Each method passes the DialogFragment in case the host needs to query it. */
     public interface MilitaryDialogListener {
-    	public void onDialogClose();
-    	public void onDialogNext(int age, int player);
+    	void onDialogClose();
+    	void onDialogNext(int age, int player);
     }
     
     // Use this instance of the interface to deliver action events
@@ -91,9 +91,9 @@ public class MilitaryDialogFragment extends DialogFragment  {
         
     private void initButtons() {
     	if (mainView != null) {
-			Button button = (Button)mainView.findViewById(R.id.buttonPlayer1);
-			Button button2 = (Button)mainView.findViewById(R.id.buttonPlayer2);
-			Button tieBtn = (Button)mainView.findViewById(R.id.buttonTie);
+			Button button = mainView.findViewById(R.id.buttonPlayer1);
+			Button button2 = mainView.findViewById(R.id.buttonPlayer2);
+			Button tieBtn = mainView.findViewById(R.id.buttonTie);
 			
 			button.setText(app.getPlayerScoreDataName(player));
 			button2.setText(app.getPlayerScoreDataName(playerNext));
@@ -123,7 +123,7 @@ public class MilitaryDialogFragment extends DialogFragment  {
 	
 	private void initImages() {
 		if (mainView != null) {
-			ImageView image = (ImageView)mainView.findViewById(R.id.imageViewAge);
+			ImageView image = mainView.findViewById(R.id.imageViewAge);
 			
 			image.setImageResource(imageidArray[age - 1]);
 		}

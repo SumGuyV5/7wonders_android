@@ -32,7 +32,7 @@ public class DeletePlayersDialogFragment extends DialogFragment {
      * implement this interface in order to receive event callbacks.
      * Each method passes the DialogFragment in case the host needs to query it. */
     public interface DeletePlayersDialogListener {
-        public void onDialogClose(int whitch);
+        void onDialogClose(int whitch);
     }
 
     // Use this instance of the interface to deliver action events

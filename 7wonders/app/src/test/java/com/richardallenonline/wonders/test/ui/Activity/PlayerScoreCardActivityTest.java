@@ -63,7 +63,7 @@ public class PlayerScoreCardActivityTest {
         TextView txt = null;
         for (int textId : textIdArray) {
             try{
-                txt = (TextView)activity.findViewById(textId);
+                txt = activity.findViewById(textId);
                 assertThat(txt).isNotNull();
                 System.out.println(txt.getId() + " - passed");
             }catch(AssertionError e){
@@ -79,7 +79,7 @@ public class PlayerScoreCardActivityTest {
         EditText txt = null;
         for (int textId : editTextIdArray) {
             try{
-                txt = (EditText)activity.findViewById(textId);
+                txt = activity.findViewById(textId);
                 assertThat(txt).isNotNull();
                 System.out.println(txt.getId() + " - passed");
             }catch(AssertionError e){
@@ -95,7 +95,7 @@ public class PlayerScoreCardActivityTest {
         Button btn = null;
         for (int buttonId : buttonIdArray) {
             try{
-                btn = (Button)activity.findViewById(buttonId);
+                btn = activity.findViewById(buttonId);
                 assertThat(btn).isNotNull();
                 System.out.println(btn.getText() + " - passed");
             }catch (AssertionError e){
@@ -111,7 +111,7 @@ public class PlayerScoreCardActivityTest {
         EditText txt = null;
         for (int textId : editTextIdArray) {
             try{
-                txt = (EditText)activity.findViewById(textId);
+                txt = activity.findViewById(textId);
                 assertThat(txt.getText()).isEqualTo("0");
                 System.out.println(txt.getId() + " - passed");
             }catch(AssertionError e){
@@ -124,7 +124,7 @@ public class PlayerScoreCardActivityTest {
 
     @Test
     public void checkTextViewPlayerName() throws Exception {
-        TextView txt = (TextView)activity.findViewById(R.id.textViewPlayerName);
+        TextView txt = activity.findViewById(R.id.textViewPlayerName);
         try{
             assertThat(txt.getText()).isEqualTo("Player 1");
             System.out.println("PlayerName - passed");
@@ -137,7 +137,7 @@ public class PlayerScoreCardActivityTest {
 
     @Test
     public void checkTextViewTotal() throws Exception {
-        TextView txt = (TextView)activity.findViewById(R.id.textViewTotal);
+        TextView txt = activity.findViewById(R.id.textViewTotal);
         try{
             assertThat(txt.getText()).isEqualTo("0");
             System.out.println("Total - passed");
@@ -151,7 +151,7 @@ public class PlayerScoreCardActivityTest {
     @Test
     public void clickingScoreButton() throws  Exception {
         activity.findViewById(R.id.buttonScore).performClick();
-        TextView txt = (TextView)activity.findViewById(R.id.textViewTotal);
+        TextView txt = activity.findViewById(R.id.textViewTotal);
         assertThat(txt.getText()).isEqualTo("0");
     }
 

@@ -114,7 +114,7 @@ public class PlayerCountActivity extends Activity
 		switch(which) {
 			case DialogInterface.BUTTON_POSITIVE:
 				int count = app.getPlayersDataSize();
-				RadioGroup radioGroup = (RadioGroup)findViewById(R.id.radioGroupPlayerCount);
+				RadioGroup radioGroup = findViewById(R.id.radioGroupPlayerCount);
 				if (count >= 2)
 					count -= 2;
 				else
@@ -131,11 +131,11 @@ public class PlayerCountActivity extends Activity
 
 	private int PlayerCount() {
 
-		RadioGroup radioGroup = (RadioGroup)findViewById(R.id.radioGroupPlayerCount);
+		RadioGroup radioGroup = findViewById(R.id.radioGroupPlayerCount);
 
         int radioButtonID = radioGroup.getCheckedRadioButtonId();
 
-		RadioButton radioButton = (RadioButton)radioGroup.findViewById(radioButtonID);
+		RadioButton radioButton = radioGroup.findViewById(radioButtonID);
 
         return Integer.parseInt(radioButton.getText().toString());
 	}

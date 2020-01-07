@@ -31,7 +31,7 @@ public class PastPlayersDialogFragment extends DialogFragment {
      * implement this interface in order to receive event callbacks.
      * Each method passes the DialogFragment in case the host needs to query it. */
     public interface PastPlayersDialogListener {
-        public void onDialogClose(int whitch);
+        void onDialogClose(int whitch);
 
         //public void onDialogNext(int age, int player);
     }

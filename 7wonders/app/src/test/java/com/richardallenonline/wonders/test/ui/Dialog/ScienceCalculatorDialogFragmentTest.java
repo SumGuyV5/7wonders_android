@@ -71,7 +71,7 @@ public class ScienceCalculatorDialogFragmentTest extends testDataScienceCalculat
 
         sAlert.getView().findViewById(R.id.buttonGO).performClick();
 
-        LinearLayout ll = (LinearLayout)sAlert.getView().findViewById(R.id.linearLayout1);
+        LinearLayout ll = sAlert.getView().findViewById(R.id.linearLayout1);
 
         try {
             assertThat(ll.getVisibility()).isEqualTo(View.VISIBLE);
@@ -83,7 +83,7 @@ public class ScienceCalculatorDialogFragmentTest extends testDataScienceCalculat
 
         try {
             for (int id: textidArray) {
-                text = (TextView)sAlert.getView().findViewById(id);
+                text = sAlert.getView().findViewById(id);
                 assertThat(text.getText().toString()).isNotEmpty();
             }
             System.out.println("Reset Text View - passed");
@@ -103,11 +103,11 @@ public class ScienceCalculatorDialogFragmentTest extends testDataScienceCalculat
 
         sAlert.getView().findViewById(R.id.buttonRESET).performClick();
 
-        LinearLayout ll = (LinearLayout)sAlert.getView().findViewById(R.id.linearLayout1);
+        LinearLayout ll = sAlert.getView().findViewById(R.id.linearLayout1);
 
         try {
             for (int id: wheelidArray) {
-                wheel = (WheelView)sAlert.getView().findViewById(id);
+                wheel = sAlert.getView().findViewById(id);
                 assertThat(wheel.getCurrentItem()).isEqualTo(0);
             }
             System.out.println("Reset Wheels - passed");
@@ -118,7 +118,7 @@ public class ScienceCalculatorDialogFragmentTest extends testDataScienceCalculat
 
         try {
             for (int id: textidArray) {
-                text = (TextView)sAlert.getView().findViewById(id);
+                text = sAlert.getView().findViewById(id);
                 assertThat(text.getText().toString()).isEmpty();
             }
             System.out.println("Reset Text View - passed");
@@ -221,7 +221,7 @@ public class ScienceCalculatorDialogFragmentTest extends testDataScienceCalculat
     }
 
     private void CheckThis(int value, int id, String msg) throws AssertionError {
-        TextView txt = (TextView)sAlert.getView().findViewById(id);
+        TextView txt = sAlert.getView().findViewById(id);
         int what = Integer.parseInt(txt.getText().toString());
         assertThat(what).isEqualTo(value);
         System.out.println(msg + " - passed");

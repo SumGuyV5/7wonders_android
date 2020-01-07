@@ -23,16 +23,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass. Activities that contain this fragment
- * must implement the
- * {@link ScienceCalculatorDialogFragment.OnFragmentInteractionListener}
- * interface to handle interaction events. Use the
- * {@link ScienceCalculatorDialogFragment#newInstance} factory method to create
- * an instance of this fragment.
- *
- */
-
 public class ScienceCalculatorDialogFragment extends DialogFragment  {
 	private static final int[] textidArray = {R.id.textViewTablet, R.id.textViewGear, R.id.textViewCompass, R.id.textViewWild,
 		R.id.textViewScore};
@@ -55,7 +45,7 @@ public class ScienceCalculatorDialogFragment extends DialogFragment  {
      * implement this interface in order to receive event callbacks.
      * Each method passes the DialogFragment in case the host needs to query it. */
     public interface ScienceCalculatorDialogListener {
-    	public void onDialogClose();
+    	void onDialogClose();
     }
     
     // Use this instance of the interface to deliver action events
@@ -115,7 +105,7 @@ public class ScienceCalculatorDialogFragment extends DialogFragment  {
 	private void initButtons() {
 		Button button = null;
 		for (int id : clickidArray) {
-			button = (Button)mainView.findViewById(id);
+			button = mainView.findViewById(id);
 			button.setOnClickListener(new OnClickListener() {
 				@Override
 				public void onClick(View view) {
@@ -135,7 +125,7 @@ public class ScienceCalculatorDialogFragment extends DialogFragment  {
 	private void initImages() {
 		ImageView image = null;
 		for (int id : clickImageidArray) {
-			image = (ImageView)mainView.findViewById(id);
+			image = mainView.findViewById(id);
 			image.setOnClickListener(new OnClickListener() {
 				@Override
 				public void onClick(View view) {
@@ -150,7 +140,7 @@ public class ScienceCalculatorDialogFragment extends DialogFragment  {
         WheelView wheel = null;
 
         for (int id : wheelidArray) {
-	        wheel = (WheelView)mainView.findViewById(id);
+	        wheel = mainView.findViewById(id);
 	        wheel.setViewAdapter(new NumericWheelAdapter(mainView.getContext(), 0, 9));
 
 	        wheel.setCyclic(true);
@@ -169,7 +159,7 @@ public class ScienceCalculatorDialogFragment extends DialogFragment  {
 
 
     	for (int id : wheelidArray) {
-    		wheel = (WheelView)mainView.findViewById(id);
+    		wheel = mainView.findViewById(id);
     		int tmp = wheel.getCurrentItem();
 
     		switch (id) {
@@ -190,11 +180,11 @@ public class ScienceCalculatorDialogFragment extends DialogFragment  {
 
     	score.Set(tablet, gear, compass, wild);
 
-    	LinearLayout ll = (LinearLayout)mainView.findViewById(R.id.linearLayout1);
+    	LinearLayout ll = mainView.findViewById(R.id.linearLayout1);
     	ll.setVisibility(View.VISIBLE);
 
     	for (int id : textidArray) {
-    		text = (TextView)mainView.findViewById(id);
+    		text = mainView.findViewById(id);
     		switch (id) {
 	    		case R.id.textViewTablet:
 	    			text.setText(((Integer)score.getTablet()).toString());
@@ -220,16 +210,16 @@ public class ScienceCalculatorDialogFragment extends DialogFragment  {
     	TextView text = null;
 
     	for (int id : wheelidArray) {
-    		wheel = (WheelView)mainView.findViewById(id);
+    		wheel = mainView.findViewById(id);
     		wheel.setCurrentItem(0);
     	}
 
     	for (int id : textidArray) {
-    		text = (TextView)mainView.findViewById(id);
+    		text = mainView.findViewById(id);
     		text.setText("");
     	}
 
-    	LinearLayout ll = (LinearLayout)mainView.findViewById(R.id.linearLayout1);
+    	LinearLayout ll = mainView.findViewById(R.id.linearLayout1);
     	ll.setVisibility(View.GONE);
     }
 
@@ -237,20 +227,20 @@ public class ScienceCalculatorDialogFragment extends DialogFragment  {
     	WheelView wheel = null;
     	switch (view.getId()) {
 	    	case R.id.imageViewTablet:
-	    		wheel = (WheelView)mainView.findViewById(R.id.wheelTablet);
+	    		wheel = mainView.findViewById(R.id.wheelTablet);
 	    		break;
 	    	case R.id.imageViewGear:
-	    		wheel = (WheelView)mainView.findViewById(R.id.wheelGear);
+	    		wheel = mainView.findViewById(R.id.wheelGear);
 	    		break;
 	    	case R.id.imageViewCompass:
-	    		wheel = (WheelView)mainView.findViewById(R.id.wheelCompass);
+	    		wheel = mainView.findViewById(R.id.wheelCompass);
 	    		break;
 	    	case R.id.imageViewTabletWild:
 	    	case R.id.imageViewSlash1:
 	    	case R.id.imageViewGearWild:
 	    	case R.id.imageViewSlash2:
 	    	case R.id.imageViewCompassWild:
-	    		wheel = (WheelView)mainView.findViewById(R.id.wheelWild);
+	    		wheel = mainView.findViewById(R.id.wheelWild);
 	    		break;
     	}
     	wheel.setCurrentItem(wheel.getCurrentItem() + 1);

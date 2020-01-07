@@ -48,7 +48,7 @@ public class PlayerCountActivityTest {
 
     @Test
     public void checkRadioButtonNotNull() throws Exception {
-        RadioGroup radioGroup = (RadioGroup)activity.findViewById(R.id.radioGroupPlayerCount);
+        RadioGroup radioGroup = activity.findViewById(R.id.radioGroupPlayerCount);
         assertThat(radioGroup).isNotNull();
     }
 
@@ -57,7 +57,7 @@ public class PlayerCountActivityTest {
         final int[] buttonArray = {R.id.buttonGO, R.id.buttonPastPlayers, R.id.buttonDeletePlayers };
         Button btn = null;
         for (int button : buttonArray) {
-            btn = (Button)activity.findViewById(button);
+            btn = activity.findViewById(button);
             try{
                 assertThat(btn).isNotNull();
                 System.out.println(btn.getText() + " - passed");
@@ -75,11 +75,11 @@ public class PlayerCountActivityTest {
         final int[] radioidArray = {R.id.radio0, R.id.radio1, R.id.radio2, R.id.radio3,
                 R.id.radio4, R.id.radio5, R.id.radio6 };
 
-        RadioGroup radioGroup = (RadioGroup)activity.findViewById(R.id.radioGroupPlayerCount);
+        RadioGroup radioGroup = activity.findViewById(R.id.radioGroupPlayerCount);
         RadioButton radioButton = null;
 
         for (int radioId: radioidArray) {
-            radioButton = (RadioButton)radioGroup.findViewById(radioId);
+            radioButton = radioGroup.findViewById(radioId);
             try{
                 if (radioId == radioidArray[0])
                     assertThat(radioButton.isChecked()).isTrue();

@@ -8,7 +8,7 @@ public enum EqualsBy {
     EveryThing(10);
 
     private final int value;
-    private EqualsBy(int value) {
+    EqualsBy(int value) {
         this.value = value;
     }
 

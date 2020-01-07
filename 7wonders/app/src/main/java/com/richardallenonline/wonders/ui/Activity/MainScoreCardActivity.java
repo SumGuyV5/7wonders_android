@@ -113,7 +113,7 @@ public class MainScoreCardActivity extends Activity
 		public void Refresh() {
 			TextView txt = null;
 			for (int id = 0; id < app.getPlayerCount(); id++) {
-				txt = (TextView)mainView.findViewById(textidArray[id]);
+				txt = mainView.findViewById(textidArray[id]);
 				txt.setText(((Integer) app.getPlayerScoreData().get(id).getFinalScore()).toString());
 			}			
 		}
@@ -127,7 +127,7 @@ public class MainScoreCardActivity extends Activity
 		private void Hide() {
 			LinearLayout ll = null;		
 			for ( int id: layoutidArray) {
-				ll = (LinearLayout)mainView.findViewById(id);
+				ll = mainView.findViewById(id);
 				ll.setVisibility(View.INVISIBLE);
 			}
 		}
@@ -135,7 +135,7 @@ public class MainScoreCardActivity extends Activity
 		private void Show() {
 			LinearLayout ll = null;
 			for (int id = 0; id < app.getPlayerCount(); id++) {
-				ll = (LinearLayout)mainView.findViewById(layoutidArray[id]);
+				ll = mainView.findViewById(layoutidArray[id]);
 				ll.setVisibility(View.VISIBLE);
 				EditTextListener(editTextidArray[id]);
 			}			
@@ -143,13 +143,13 @@ public class MainScoreCardActivity extends Activity
 		
 		private void UpdateNames() {
 			for (int id = 0; id < app.getPlayerCount(); id++) {
-				EditText txt = (EditText)mainView.findViewById(editTextidArray[id]);
+				EditText txt = mainView.findViewById(editTextidArray[id]);
 				txt.setText(app.getPlayerScoreDataName(id));
 			}
 		}
 				
 		private void EditTextListener(int value) {			
-			EditText myTextBox = (EditText)mainView.findViewById(value);
+			EditText myTextBox = mainView.findViewById(value);
 			myTextBox.addTextChangedListener(new TextWatcher() {
 				@Override
 				public void afterTextChanged(Editable s) {

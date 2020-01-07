@@ -56,7 +56,7 @@ public class MainScoreCardActivityTest {
 
         Button btn = null;
         for (int buttonId : buttonIdArray) {
-            btn = (Button)activity.findViewById(buttonId);
+            btn = activity.findViewById(buttonId);
             try{
                 assertThat(btn).isNotNull();
                 System.out.println(btn.getText() + " - passed");
@@ -72,7 +72,7 @@ public class MainScoreCardActivityTest {
     public void checkImagesNotNull()  throws Exception {
         ImageView imgView = null;
         for (int imageViewId : imageViewIdArray) {
-            imgView = (ImageView)activity.findViewById(imageViewId);
+            imgView = activity.findViewById(imageViewId);
             try{
                 assertThat(imgView).isNotNull();
                 System.out.println("ImageView - passed");
@@ -91,7 +91,7 @@ public class MainScoreCardActivityTest {
         for (int playerNum = 0; playerNum < app.getPlayerCount(); playerNum++) {
         //for (int buttonId: buttonIdArray) {
             expectedIntent.putExtra("PlayerNumber", playerNum);
-            btn = (Button)activity.findViewById(buttonIdArray[playerNum]);
+            btn = activity.findViewById(buttonIdArray[playerNum]);
             try{
                 btn.performClick();
                 assertThat(shadowOf(activity).getNextStartedActivity()).isEqualTo(expectedIntent);
@@ -111,7 +111,7 @@ public class MainScoreCardActivityTest {
         AlertDialog alert = ShadowAlertDialog.getLatestAlertDialog();
         ShadowAlertDialog sAlert = shadowOf(alert);
 
-        Button btn = (Button)alert.getButton(AlertDialog.BUTTON_POSITIVE);
+        Button btn = alert.getButton(AlertDialog.BUTTON_POSITIVE);
 
 
         assertThat(sAlert.getTitle()).isEqualTo(activity.getString(R.string.military_dailog));

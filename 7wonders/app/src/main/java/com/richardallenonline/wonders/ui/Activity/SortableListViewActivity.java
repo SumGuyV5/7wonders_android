@@ -23,7 +23,7 @@ public class SortableListViewActivity extends ListActivity {
 	//private SortableListViewListener mListener = null;
 	
 	public interface  SortableListViewListener {
-    	public void onDialogClose();
+    	void onDialogClose();
     }
 	
 	private TouchInterceptor.DropListener mDropListener = new TouchInterceptor.DropListener() {

@@ -30,18 +30,18 @@ public class testDataScienceCalculatorDialog {
         Random r = new Random();
 
         for (int id: wheelidArray) {
-            wheel = (WheelView)sAlert.getView().findViewById(id);
+            wheel = sAlert.getView().findViewById(id);
             wheel.setCurrentItem(r.nextInt(9));
         }
 
         for (int id : textidArray) {
-            text = (TextView)sAlert.getView().findViewById(id);
+            text = sAlert.getView().findViewById(id);
             text.setText("99");
         }
     }
 
     private void setWheel( int to, int id) {
-        WheelView wheel = (WheelView)sAlert.getView().findViewById(id);
+        WheelView wheel = sAlert.getView().findViewById(id);
         wheel.setCurrentItem(to);
     }
 
