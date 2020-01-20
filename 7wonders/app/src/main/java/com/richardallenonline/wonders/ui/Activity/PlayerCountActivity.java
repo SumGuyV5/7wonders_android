@@ -124,7 +124,6 @@ public class PlayerCountActivity extends Activity
 			case DialogInterface.BUTTON_NEUTRAL:
 				break;
 			case DialogInterface.BUTTON_NEGATIVE:
-
 				break;
 		}
 	}

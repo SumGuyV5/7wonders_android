@@ -125,7 +125,6 @@ public class PlaysDataset extends Dataset {
 
 		boolean rtn = false;
 		switch (EqualsBy.getId(super.getEqualsBy().getValue() | other.getEqualsBy().getValue())) {
-			default:
 			case ID:
 				rtn = (playerKey == other.getPlayerKey());
 				break;

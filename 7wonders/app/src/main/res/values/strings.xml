@@ -77,4 +77,34 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_test">TestActivity</string>
 
+    <string name="description_tablet">Science Tablet</string>
+    <string name="description_gear">Science Gear</string>
+    <string name="description_compass">Science Compass</string>
+    <string name="description_slash">or slash</string>
+
+    <string name="description_age1">First Age</string>
+    <string name="description_age2">Second Age</string>
+    <string name="description_age3">Third Age</string>
+
+    <string name="labelfor_military">Military Score</string>
+    <string name="labelfor_money">Money Score</string>
+    <string name="labelfor_wonder">Wonder Score</string>
+    <string name="labelfor_civilian">Civilian Score</string>
+    <string name="labelfor_commercial">Commercial Score</string>
+    <string name="labelfor_guild">Guild Score</string>
+    <string name="labelfor_science">Science Score</string>
+    <string name="labelfor_leaders">Leaders Score</string>
+    <string name="labelfor_cities">Cities Score</string>
+    <string name="labelfor_debt">Debt Score</string>
+
+    <string name="labelfor_player1">Player One</string>
+    <string name="labelfor_player2">Player Two</string>
+    <string name="labelfor_player3">Player Three</string>
+    <string name="labelfor_player4">Player Four</string>
+    <string name="labelfor_player5">Player Five</string>
+    <string name="labelfor_player6">Player Six</string>
+    <string name="labelfor_player7">Player Seven</string>
+    <string name="labelfor_player8">Player Eight</string>
+
+
 </resources>

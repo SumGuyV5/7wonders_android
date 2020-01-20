@@ -24,7 +24,7 @@
     </style>
 
     <style name="TextView" parent="AppLayout">
-        <item name="android:text"></item>
+        <item name="android:text" />
         <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
     </style>
 
@@ -33,7 +33,7 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <style name="ButtonView" parent="AppLayout"></style>
+    <style name="ButtonView" parent="AppLayout" />
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>

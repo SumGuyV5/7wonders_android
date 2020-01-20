@@ -29,7 +29,7 @@ public class PlayerScoreDataset extends PlaysDataset {
 	}
 	
 	private void CalculateMil() {
-		int militaryPoints = (getVitoryTokenAge1() * 1);
+		int militaryPoints = (getVitoryTokenAge1());
 		militaryPoints += (getVitoryTokenAge2() * 3);
 		militaryPoints += (getVitoryTokenAge3() * 5);
 		militaryPoints += (getDefeatToken() * -1);
@@ -97,9 +97,6 @@ public class PlayerScoreDataset extends PlaysDataset {
 			break;
 		case 3:
 			addVitoryTokenAge3();
-			break;
-		default:
-			addVitoryTokenAge1();
 			break;
 		}
 	}

@@ -15,6 +15,7 @@
 	        
 	        <ImageView
 	            style="@style/AppLayout"
+				android:contentDescription="@string/description_tablet"
 		        android:id="@+id/imageViewTablet"
 		        android:src="@drawable/tablet"
 		        android:onClick="imagePress" />
@@ -37,6 +38,7 @@
 	        
 	        <ImageView
 	            style="@style/AppLayout"
+				android:contentDescription="@string/description_gear"
 		        android:id="@+id/imageViewGear"
 		        android:src="@drawable/gear"
 		        android:onClick="imagePress" />
@@ -60,6 +62,7 @@
 	        
 	        <ImageView
 	            style="@style/AppLayout"
+				android:contentDescription="@string/description_compass"
 		        android:id="@+id/imageViewCompass"
 		        android:src="@drawable/compass"
 		        android:onClick="imagePress" />
@@ -89,26 +92,31 @@
 	        	android:orientation="horizontal" >
 		        <ImageView
 		            style="@style/AppLayout"
+					android:contentDescription="@string/description_tablet"
 			        android:id="@+id/imageViewTabletWild"
 			        android:src="@drawable/tablet"
 			        android:onClick="imagePress" />
 		        <ImageView
 		            style="@style/AppLayout"
+					android:contentDescription="@string/description_slash"
 			        android:id="@+id/imageViewSlash1"
 			        android:src="@drawable/slash"
 			        android:onClick="imagePress" />
 		        <ImageView
 		            style="@style/AppLayout"
+					android:contentDescription="@string/description_gear"
 			        android:id="@+id/imageViewGearWild"
 			        android:src="@drawable/gear"
 			        android:onClick="imagePress" />
 		        <ImageView
 		            style="@style/AppLayout"
+					android:contentDescription="@string/description_slash"
 			        android:id="@+id/imageViewSlash2"
 			        android:src="@drawable/slash"
 			        android:onClick="imagePress" />
 		        <ImageView
 		            style="@style/AppLayout"
+					android:contentDescription="@string/description_compass"
 			        android:id="@+id/imageViewCompassWild"
 			        android:src="@drawable/compass"
 			        android:onClick="imagePress" />
@@ -153,6 +161,7 @@
 	        
 	        <ImageView
 	            style="@style/AppLayout"
+				android:contentDescription="@string/description_tablet"
 		        android:id="@+id/imageView5"
 		        android:src="@drawable/tablet" />
 	        
@@ -169,6 +178,7 @@
 	        
 	        <ImageView
 	            style="@style/AppLayout"
+				android:contentDescription="@string/description_gear"
 		        android:id="@+id/imageView6"
 		        android:src="@drawable/gear" />
 	        
@@ -185,6 +195,7 @@
 	        
 	        <ImageView
 	            style="@style/AppLayout"
+				android:contentDescription="@string/description_compass"
 		        android:id="@+id/imageView7"
 		        android:src="@drawable/compass" />
 	        
@@ -205,22 +216,27 @@
 	        	android:orientation="horizontal" >
 		        <ImageView
 		            style="@style/AppLayout"
+					android:contentDescription="@string/description_tablet"
 			        android:id="@+id/imageViewTabletWildCal"
 			        android:src="@drawable/tablet" />
 		        <ImageView
 		            style="@style/AppLayout"
+					android:contentDescription="@string/description_slash"
 			        android:id="@+id/imageViewSlash1Cal"
 			        android:src="@drawable/slash" />
 		        <ImageView
 		            style="@style/AppLayout"
+					android:contentDescription="@string/description_gear"
 			        android:id="@+id/imageViewGearWildCal"
 			        android:src="@drawable/gear" />
 		        <ImageView
 		            style="@style/AppLayout"
+					android:contentDescription="@string/description_slash"
 			        android:id="@+id/imageViewSlash2Cal"
 			        android:src="@drawable/slash" />
 		        <ImageView
 		            style="@style/AppLayout"
+					android:contentDescription="@string/description_compass"
 			        android:id="@+id/imageViewCompassWildCal"
 			        android:src="@drawable/compass" />
 	        </LinearLayout>

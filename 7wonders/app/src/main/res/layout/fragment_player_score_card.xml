@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:gravity="center"
-    tools:context="com.richardallenonline.wonders.PlayerScoreCardActivity$PlaceholderFragment" >
+    tools:context="com.richardallenonline.wonders.ui.Activity.PlayerScoreCardActivity$PlaceholderFragment" >
 
     <GridLayout
         android:layout_width="match_parent"
@@ -40,6 +40,7 @@
 	            
 	    <EditText
 	        style="@style/AppLayout"
+			android:labelFor="@string/labelfor_military"
 	        android:id="@+id/editTextMilitary"
 	        android:ems="10"
 	        android:inputType="numberSigned" >
@@ -60,6 +61,7 @@
 	            
 	    <EditText
 	        style="@style/AppLayout"
+			android:labelFor="@string/labelfor_money"
 	        android:id="@+id/editTextMoney"
 	        android:ems="10"
 	        android:inputType="numberSigned" >
@@ -81,6 +83,7 @@
 	            
 	    <EditText
 	        style="@style/AppLayout"
+			android:labelFor="@string/labelfor_wonder"
 	        android:id="@+id/editTextWonder"
 	        android:ems="10"
 	        android:inputType="numberSigned" >
@@ -101,6 +104,7 @@
 	            
 	    <EditText
 	        style="@style/AppLayout"
+			android:labelFor="@string/labelfor_civilian"
 	        android:id="@+id/editTextCivilian"
 	        android:ems="10"
 	        android:inputType="numberSigned" >
@@ -121,6 +125,7 @@
 	            
 	    <EditText
 	        style="@style/AppLayout"
+			android:labelFor="@string/labelfor_commercial"
 	        android:id="@+id/editTextCommercial"
 	        android:ems="10"
 	        android:inputType="numberSigned" >
@@ -141,6 +146,7 @@
 	            
 	    <EditText
 	        style="@style/AppLayout"
+			android:labelFor="@string/labelfor_guild"
 	        android:id="@+id/editTextGuild"
 	        android:ems="10"
 	        android:inputType="numberSigned" >
@@ -163,6 +169,7 @@
 	    <EditText
 	        style="@style/AppLayout"
 	        android:id="@+id/editTextScience"
+			android:labelFor="@string/labelfor_science"
 	        android:ems="10"
 	        android:inputType="numberSigned"	        
 	        android:onClick="scienceHelpButton" >
@@ -183,6 +190,7 @@
 	            
 	    <EditText
 	        style="@style/AppLayout"
+			android:labelFor="@string/labelfor_leaders"
 	        android:id="@+id/editTextLeaders"
 	        android:ems="10"
 	        android:inputType="numberSigned" >
@@ -203,6 +211,7 @@
 	            
 	    <EditText
 	        style="@style/AppLayout"
+			android:labelFor="@string/labelfor_cities"
 	        android:id="@+id/editTextCities"
 	        android:ems="10"
 	        android:inputType="numberSigned" >
@@ -223,6 +232,7 @@
 	            
 	    <EditText
 	        style="@style/AppLayout"
+			android:labelFor="@string/labelfor_debt"
 	        android:id="@+id/editTextDebt"
 	        android:ems="10"
 	        android:inputType="numberSigned" >

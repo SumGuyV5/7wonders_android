@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:gravity="center"
-    tools:context="com.richardallenonline.wonders.ScoreCardActivity$PlaceholderFragment" >
+    tools:context="com.richardallenonline.wonders.ui.Activity.MainScoreCardActivity$PlaceholderFragment" >
 
     <LinearLayout
         style="@style/AppLayout"
@@ -13,18 +13,21 @@
         
         <ImageView
             style="@style/ImageView"
+            android:contentDescription="@string/description_age1"
 	        android:id="@+id/imageViewAge1"
 	        android:src="@drawable/age1"
 	        android:onClick="imagePress" />
         
         <ImageView
             style="@style/ImageView"
+            android:contentDescription="@string/description_age2"
 	        android:id="@+id/imageViewAge2"
 	        android:src="@drawable/age2"
 	        android:onClick="imagePress" />
         
         <ImageView
             style="@style/ImageView"
+            android:contentDescription="@string/description_age3"
 	        android:id="@+id/imageViewAge3"
 	        android:src="@drawable/age3"
 	        android:onClick="imagePress" />
@@ -38,6 +41,7 @@
 
         <EditText
             style="@style/AppLayout"
+            android:labelFor="@string/labelfor_player1"
             android:id="@+id/editTextPlayer1"
             android:layout_weight="1"
             android:ems="10"
@@ -67,6 +71,7 @@
 
         <EditText
             style="@style/AppLayout"
+            android:labelFor="@string/labelfor_player2"
             android:id="@+id/editTextPlayer2"
             android:layout_weight="1"
             android:ems="10"
@@ -96,6 +101,7 @@
 
         <EditText
             style="@style/AppLayout"
+            android:labelFor="@string/labelfor_player3"
             android:id="@+id/editTextPlayer3"
             android:layout_weight="1"
             android:ems="10"
@@ -125,6 +131,7 @@
 
         <EditText
             style="@style/AppLayout"
+            android:labelFor="@string/labelfor_player4"
             android:id="@+id/editTextPlayer4"
             android:layout_weight="1"
             android:ems="10"
@@ -154,6 +161,7 @@
 
         <EditText
             style="@style/AppLayout"
+            android:labelFor="@string/labelfor_player5"
             android:id="@+id/editTextPlayer5"
             android:layout_weight="1"
             android:ems="10"
@@ -183,6 +191,7 @@
 
         <EditText
             style="@style/AppLayout"
+            android:labelFor="@string/labelfor_player6"
             android:id="@+id/editTextPlayer6"
             android:layout_weight="1"
             android:ems="10"
@@ -212,6 +221,7 @@
 
         <EditText
             style="@style/AppLayout"
+            android:labelFor="@string/labelfor_player7"
             android:id="@+id/editTextPlayer7"
             android:layout_weight="1"
             android:ems="10"
@@ -241,6 +251,7 @@
 
         <EditText
             style="@style/AppLayout"
+            android:labelFor="@string/labelfor_player8"
             android:id="@+id/editTextPlayer8"
             android:layout_weight="1"
             android:ems="10"
