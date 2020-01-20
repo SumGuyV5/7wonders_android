@@ -41,6 +41,7 @@
 	    <EditText
 	        style="@style/AppLayout"
 			android:labelFor="@string/labelfor_military"
+			android:hint="@string/hint_military"
 	        android:id="@+id/editTextMilitary"
 	        android:ems="10"
 	        android:inputType="numberSigned" >
@@ -62,6 +63,7 @@
 	    <EditText
 	        style="@style/AppLayout"
 			android:labelFor="@string/labelfor_money"
+			android:hint="@string/hint_money"
 	        android:id="@+id/editTextMoney"
 	        android:ems="10"
 	        android:inputType="numberSigned" >
@@ -84,6 +86,7 @@
 	    <EditText
 	        style="@style/AppLayout"
 			android:labelFor="@string/labelfor_wonder"
+			android:hint="@string/hint_wonder"
 	        android:id="@+id/editTextWonder"
 	        android:ems="10"
 	        android:inputType="numberSigned" >
@@ -105,6 +108,7 @@
 	    <EditText
 	        style="@style/AppLayout"
 			android:labelFor="@string/labelfor_civilian"
+			android:hint="@string/hint_civilian"
 	        android:id="@+id/editTextCivilian"
 	        android:ems="10"
 	        android:inputType="numberSigned" >
@@ -126,6 +130,7 @@
 	    <EditText
 	        style="@style/AppLayout"
 			android:labelFor="@string/labelfor_commercial"
+			android:hint="@string/hint_commercial"
 	        android:id="@+id/editTextCommercial"
 	        android:ems="10"
 	        android:inputType="numberSigned" >
@@ -147,6 +152,7 @@
 	    <EditText
 	        style="@style/AppLayout"
 			android:labelFor="@string/labelfor_guild"
+			android:hint="@string/hint_guild"
 	        android:id="@+id/editTextGuild"
 	        android:ems="10"
 	        android:inputType="numberSigned" >
@@ -170,6 +176,7 @@
 	        style="@style/AppLayout"
 	        android:id="@+id/editTextScience"
 			android:labelFor="@string/labelfor_science"
+			android:hint="@string/hint_science"
 	        android:ems="10"
 	        android:inputType="numberSigned"	        
 	        android:onClick="scienceHelpButton" >
@@ -191,6 +198,7 @@
 	    <EditText
 	        style="@style/AppLayout"
 			android:labelFor="@string/labelfor_leaders"
+			android:hint="@string/hint_leaders"
 	        android:id="@+id/editTextLeaders"
 	        android:ems="10"
 	        android:inputType="numberSigned" >
@@ -212,6 +220,7 @@
 	    <EditText
 	        style="@style/AppLayout"
 			android:labelFor="@string/labelfor_cities"
+			android:hint="@string/hint_cities"
 	        android:id="@+id/editTextCities"
 	        android:ems="10"
 	        android:inputType="numberSigned" >
@@ -233,6 +242,7 @@
 	    <EditText
 	        style="@style/AppLayout"
 			android:labelFor="@string/labelfor_debt"
+			android:hint="@string/hint_debt"
 	        android:id="@+id/editTextDebt"
 	        android:ems="10"
 	        android:inputType="numberSigned" >

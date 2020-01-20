@@ -97,6 +97,17 @@
     <string name="labelfor_cities">Cities Score</string>
     <string name="labelfor_debt">Debt Score</string>
 
+    <string name="hint_military">Military Score</string>
+    <string name="hint_money">Money Score</string>
+    <string name="hint_wonder">Wonder Score</string>
+    <string name="hint_civilian">Civilian Score</string>
+    <string name="hint_commercial">Commercial Score</string>
+    <string name="hint_guild">Guild Score</string>
+    <string name="hint_science">Science Score</string>
+    <string name="hint_leaders">Leaders Score</string>
+    <string name="hint_cities">Cities Score</string>
+    <string name="hint_debt">Debt Score</string>
+
     <string name="labelfor_player1">Player One</string>
     <string name="labelfor_player2">Player Two</string>
     <string name="labelfor_player3">Player Three</string>
@@ -105,6 +116,15 @@
     <string name="labelfor_player6">Player Six</string>
     <string name="labelfor_player7">Player Seven</string>
     <string name="labelfor_player8">Player Eight</string>
+
+    <string name="hint_player1">Player One</string>
+    <string name="hint_player2">Player Two</string>
+    <string name="hint_player3">Player Three</string>
+    <string name="hint_player4">Player Four</string>
+    <string name="hint_player5">Player Five</string>
+    <string name="hint_player6">Player Six</string>
+    <string name="hint_player7">Player Seven</string>
+    <string name="hint_player8">Player Eight</string>
 
 
 </resources>

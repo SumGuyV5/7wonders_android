@@ -42,6 +42,7 @@
         <EditText
             style="@style/AppLayout"
             android:labelFor="@string/labelfor_player1"
+            android:hint="@string/hint_player1"
             android:id="@+id/editTextPlayer1"
             android:layout_weight="1"
             android:ems="10"
@@ -72,6 +73,7 @@
         <EditText
             style="@style/AppLayout"
             android:labelFor="@string/labelfor_player2"
+            android:hint="@string/hint_player2"
             android:id="@+id/editTextPlayer2"
             android:layout_weight="1"
             android:ems="10"
@@ -102,6 +104,7 @@
         <EditText
             style="@style/AppLayout"
             android:labelFor="@string/labelfor_player3"
+            android:hint="@string/hint_player3"
             android:id="@+id/editTextPlayer3"
             android:layout_weight="1"
             android:ems="10"
@@ -132,6 +135,7 @@
         <EditText
             style="@style/AppLayout"
             android:labelFor="@string/labelfor_player4"
+            android:hint="@string/hint_player4"
             android:id="@+id/editTextPlayer4"
             android:layout_weight="1"
             android:ems="10"
@@ -162,6 +166,7 @@
         <EditText
             style="@style/AppLayout"
             android:labelFor="@string/labelfor_player5"
+            android:hint="@string/hint_player5"
             android:id="@+id/editTextPlayer5"
             android:layout_weight="1"
             android:ems="10"
@@ -192,6 +197,7 @@
         <EditText
             style="@style/AppLayout"
             android:labelFor="@string/labelfor_player6"
+            android:hint="@string/hint_player6"
             android:id="@+id/editTextPlayer6"
             android:layout_weight="1"
             android:ems="10"
@@ -222,6 +228,7 @@
         <EditText
             style="@style/AppLayout"
             android:labelFor="@string/labelfor_player7"
+            android:hint="@string/hint_player7"
             android:id="@+id/editTextPlayer7"
             android:layout_weight="1"
             android:ems="10"
@@ -252,6 +259,7 @@
         <EditText
             style="@style/AppLayout"
             android:labelFor="@string/labelfor_player8"
+            android:hint="@string/hint_player8"
             android:id="@+id/editTextPlayer8"
             android:layout_weight="1"
             android:ems="10"

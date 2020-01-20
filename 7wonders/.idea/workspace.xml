@@ -18,20 +18,12 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5222c3f-82e9-42eb-aac6-04ac62882ddb" name="Default" comment="update to run api 22 and check that it runs.">
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+    <list default="true" id="f5222c3f-82e9-42eb-aac6-04ac62882ddb" name="Default" comment="accessibility warnings fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/dataset/PlayerScoreDataset.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/dataset/PlayerScoreDataset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/dataset/PlaysDataset.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/dataset/PlaysDataset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/Activity/PlayerCountActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/Activity/PlayerCountActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/TouchInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/TouchInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_player_count.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_player_count.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_player_score_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_player_score_card.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_science_calculator_dailog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_science_calculator_dailog.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_score_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_score_card.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/listrow.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/listrow.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <ignored path="7Wonders.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -122,23 +114,59 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_science_calculator_dailog.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="146" column="29" selection-start-line="146" selection-start-column="29" selection-end-line="146" selection-end-column="29" />
+            <state relative-caret-position="235">
+              <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listrow.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_player_score_card.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/Activity/MainScoreCardActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            <state relative-caret-position="149">
+              <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
             </state>
           </provider>
-          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/TouchInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="82" column="71" selection-start-line="82" selection-start-column="71" selection-end-line="82" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="124" column="51" selection-start-line="124" selection-start-column="51" selection-end-line="124" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/Activity/PlayerScoreCardActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="100" column="53" selection-start-line="100" selection-start-column="53" selection-end-line="100" selection-end-column="53" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -173,7 +201,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/Activity/PlayerScoreCardActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_wonders_dailog.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/Dialog/WondersDialogFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/Activity/MainScoreCardActivity.java" />
         <option value="$PROJECT_DIR$/wheel/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
@@ -182,19 +209,20 @@
         <option value="$PROJECT_DIR$/wheel/src/main/java/kankan/wheel/widget/WheelView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/Dialog/ScienceCalculatorDialogFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/Activity/PlayerCountActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/dataset/PlaysDataset.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/dataset/PlayerScoreDataset.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/database/DataSource.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/listrow.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_player_count.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/TouchInterceptor.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_science_calculator_dailog.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_player_score_card.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_score_card.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_science_calculator_dailog.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/listrow.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/Activity/MainScoreCardActivity.java" />
       </list>
     </option>
   </component>
@@ -824,7 +852,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578425714171</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="accessibility warnings fix">
+      <created>1579549821114</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579549821114</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -837,10 +872,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48447204" visible="true" weight="0.29755783" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48447204" visible="true" weight="0.29755783" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Palette&#9;" order="3" />
@@ -867,7 +901,7 @@
       <window_info active="true" anchor="bottom" id="SVN Repositories" order="15" visible="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Terminal" order="16" weight="0.32916668" />
       <window_info anchor="bottom" id="Build" order="17" sideWeight="0.47750643" weight="0.32839838" />
-      <window_info active="true" anchor="bottom" id="Inspection Results" order="18" visible="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="Inspection Results" order="18" visible="true" weight="0.32974428" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -878,7 +912,7 @@
       <window_info anchor="right" id="Android Model" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="right" id="Designer" order="9" />
-      <window_info anchor="right" id="Preview" order="10" visible="true" weight="0.16131106" />
+      <window_info anchor="right" id="Preview" order="10" weight="0.16131106" />
       <window_info anchor="right" id="Assistant" order="11" weight="0.33868894" />
     </layout>
   </component>
@@ -894,7 +928,8 @@
     <MESSAGE value="updated to Android Studio 3.5" />
     <MESSAGE value="fix gradle warnings. update to robolectric 4.3" />
     <MESSAGE value="update to run api 22 and check that it runs." />
-    <option name="LAST_COMMIT_MESSAGE" value="update to run api 22 and check that it runs." />
+    <MESSAGE value="accessibility warnings fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="accessibility warnings fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -964,22 +999,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/Activity/PlayerScoreCardActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3621">
-          <caret line="231" column="33" selection-start-line="231" selection-start-column="33" selection-end-line="231" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_score_card.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/Activity/MainScoreCardActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="229" selection-start-line="229" selection-end-line="229" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_wonders_dailog.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1057,14 +1078,6 @@
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/wheel/src/main/java/kankan/wheel/widget/WheelScroller.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1187,55 +1200,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/TouchInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="299" column="5" lean-forward="true" selection-start-line="299" selection-start-column="5" selection-end-line="299" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/Dialog/ScienceCalculatorDialogFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2635">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_score_card.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-          <folding>
-            <element signature="e#606#632#0" expanded="true" />
-            <element signature="e#857#883#0" expanded="true" />
-            <element signature="e#1108#1134#0" expanded="true" />
-            <element signature="e#1507#1533#0" expanded="true" />
-            <element signature="e#2396#2422#0" expanded="true" />
-            <element signature="e#3285#3311#0" expanded="true" />
-            <element signature="e#4174#4200#0" expanded="true" />
-            <element signature="e#5063#5089#0" expanded="true" />
-            <element signature="e#5952#5978#0" expanded="true" />
-            <element signature="e#6841#6867#0" expanded="true" />
-            <element signature="e#7730#7756#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listrow.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_science_calculator_dailog.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1247,11 +1217,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_player_score_card.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        <state relative-caret-position="191">
+          <caret line="244" column="43" selection-start-line="244" selection-start-column="43" selection-end-line="244" selection-end-column="43" />
+          <folding>
+            <element signature="e#1450#1473#0" expanded="true" />
+            <element signature="e#2058#2078#0" expanded="true" />
+            <element signature="e#2678#2699#0" expanded="true" />
+            <element signature="e#3297#3320#0" expanded="true" />
+            <element signature="e#3930#3955#0" expanded="true" />
+            <element signature="e#4542#4562#0" expanded="true" />
+            <element signature="e#5239#5261#0" expanded="true" />
+            <element signature="e#5866#5888#0" expanded="true" />
+            <element signature="e#6478#6499#0" expanded="true" />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_score_card.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="261" column="46" selection-start-line="261" selection-start-column="46" selection-end-line="261" selection-end-column="46" />
+          <folding>
+            <element signature="e#1559#1581#0" expanded="true" />
+            <element signature="e#2496#2518#0" expanded="true" />
+            <element signature="e#3433#3455#0" expanded="true" />
+            <element signature="e#4370#4392#0" expanded="true" />
+            <element signature="e#5307#5329#0" expanded="true" />
+            <element signature="e#6244#6266#0" expanded="true" />
+            <element signature="e#7181#7203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listrow.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/Activity/PlayerScoreCardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="100" column="53" selection-start-line="100" selection-start-column="53" selection-end-line="100" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/Activity/MainScoreCardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/richardallenonline/wonders/ui/TouchInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="82" column="71" selection-start-line="82" selection-start-column="71" selection-end-line="82" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="124" column="51" selection-start-line="124" selection-start-column="51" selection-end-line="124" selection-end-column="51" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
