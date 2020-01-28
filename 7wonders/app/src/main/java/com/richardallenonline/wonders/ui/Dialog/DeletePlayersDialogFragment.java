@@ -23,8 +23,6 @@ import java.util.List;
 public class DeletePlayersDialogFragment extends DialogFragment {
     private WondersApp app = null;
 
-    //private Activity activity = null;
-
     private List<PlayersDataset> pastPlayers = new ArrayList<PlayersDataset>();
     private List<PlayersDataset> deletePlayers = new ArrayList<PlayersDataset>();
 
@@ -32,7 +30,7 @@ public class DeletePlayersDialogFragment extends DialogFragment {
      * implement this interface in order to receive event callbacks.
      * Each method passes the DialogFragment in case the host needs to query it. */
     public interface DeletePlayersDialogListener {
-        void onDialogClose(int whitch);
+        void onDialogClose(int which);
     }
 
     // Use this instance of the interface to deliver action events
@@ -61,15 +59,14 @@ public class DeletePlayersDialogFragment extends DialogFragment {
 
         CharSequence[] array = {};
         return builder
-                .setMultiChoiceItems(descriptions.toArray(array), null, new DialogInterface.OnMultiChoiceClickListener() {
+                .setMultiChoiceItems(descriptions.toArray(array), null,
+                        new DialogInterface.OnMultiChoiceClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which, boolean isChecked) {
                         if (isChecked) {
                             deletePlayers.add(pastPlayers.get(which));
-//                            app.DeletePlayersAdd(pastPlayers.get(which));
                         } else {
                             deletePlayers.remove(pastPlayers.get(which));
-//                            app.DeletePlayersRemove(pastPlayers.get(which));
                         }
                     }
                 }).create();

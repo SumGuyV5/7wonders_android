@@ -118,55 +118,7 @@ public class Database {
 		}
 		return rtn;
 	}
-		
-//	public synchronized long AddGame(GamesDataset value) {
-//		if (gamesDatasetList.size() <= 0)
-//			LoadDataBase();
-//		GamesDataset tmp = null;
-//		int idx = gamesDatasetList.indexOf(value);
-//		if (idx == -1) {
-//			tmp = AddGameDataBase(value);
-//			//tmp = new GamesDataset(value);
-//			//tmp.setId(++gamesKey);
-//			gamesDatasetList.add(tmp);
-//		} else {
-//			tmp = gamesDatasetList.get(idx);
-//		}
-//		return tmp.getId();
-//	}
-	
-//	public synchronized long AddPlayers(PlayersDataset value) {
-//		if (playersDatasetList.size() <= 0)
-//			LoadDataBase();
-//		PlayersDataset tmp = null;
-//		int idx = playersDatasetList.indexOf(value);
-//		if (idx == -1) {
-//			tmp = AddPlayersDataBase(value);
-//			//tmp = new PlayersDataset(value);
-//			//tmp.setId(++playersKey);
-//			playersDatasetList.add(tmp);
-//		} else {
-//			tmp = playersDatasetList.get(idx);
-//		}
-//		return tmp.getId();
-//	}
-	
-//	public synchronized long AddPlay(PlaysDataset value) {
-//		if (playsDatasetList.size() <= 0)
-//			LoadDataBase();
-//		PlaysDataset tmp = null;
-//		int idx = playsDatasetList.indexOf(value);
-//		if (idx == -1) {
-//			tmp = AddPlaysDataBase(value);
-//			//tmp = new PlaysDataset(value);
-//			//tmp.setId(++playsKey);
-//			playsDatasetList.add(tmp);
-//		} else {
-//			tmp = playsDatasetList.get(idx);
-//		}
-//		return tmp.getId();
-//	}
-	
+
 	public synchronized List<GamesDataset> getGames() {
 		return gamesDatasetList;
 	}
@@ -178,64 +130,11 @@ public class Database {
 	public synchronized List<PlaysDataset> getPlays() {
 		return playsDatasetList;
 	}
-	
-//	public synchronized GamesDataset AddGameDataBase(GamesDataset value) {
-//		GamesDataset tmp = null;
-//		int idx = gamesDatasetList.indexOf(value);
-//		if (idx != -1)
-//			return gamesDatasetList.get(idx);
-//
-//		try {
-//			gamesDataSource.open();
-//			tmp = gamesDataSource.create(value);
-//			gamesDataSource.close();
-//		} catch (Exception e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		return tmp;
-//	}
-	
-//	public synchronized PlayersDataset AddPlayersDataBase(PlayersDataset value) {
-//		PlayersDataset tmp = null;
-//		int idx = playersDatasetList.indexOf(value);
-//		if (idx != -1)
-//			return playersDatasetList.get(idx);
-//
-//		try {
-//			playersDataSource.open();
-//			tmp = playersDataSource.create(value);
-//			playersDataSource.close();
-//		} catch (Exception e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		return tmp;
-//	}
-	
-//	public synchronized PlaysDataset AddPlaysDataBase(PlaysDataset value) {
-//		PlaysDataset tmp = null;
-//		int idx = playsDatasetList.indexOf(value);
-//		if (idx != -1)
-//			return playsDatasetList.get(idx);
-//
-//		try {
-//			playsDataSource.open();
-//			tmp = playsDataSource.create(value);
-//			playsDataSource.close();
-//		} catch (Exception e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//
-//		return tmp;
-//	}
-	
+
 	public synchronized void Update(PlayersDataset value) {
-		PlayersDataset tmp = null;
 		int idx = playersDatasetList.indexOf(value);
 		if (idx != -1) {
-			tmp =  playersDatasetList.get(idx);
+			PlayersDataset tmp =  playersDatasetList.get(idx);
 			tmp.setHide(value.getHide());
 		}
 

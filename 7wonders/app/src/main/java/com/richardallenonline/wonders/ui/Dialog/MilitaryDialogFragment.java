@@ -19,7 +19,7 @@ import android.widget.ImageView;
 public class MilitaryDialogFragment extends DialogFragment  {
 	private View mainView = null;
 	
-	private static final int[] imageidArray = {R.drawable.age1, R.drawable.age2, R.drawable.age3};
+	private static final int[] imageidArray = { R.drawable.age1, R.drawable.age2, R.drawable.age3 };
 	private int age = 1;
 	private int player = 0;
 	private int playerNext = 1;
@@ -50,13 +50,6 @@ public class MilitaryDialogFragment extends DialogFragment  {
         
         builder.setView(mainView);
         builder.setTitle(R.string.military_dailog)
-               /*.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                   public void onClick(DialogInterface dialog, int id) {
-                       // FIRE ZE MISSILES!
-                	   okButton();
-                	   //mListener.onDialogClose();
-                   }
-               })*/
                .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
 				   @Override
 				   public void onClick(DialogInterface dialog, int id) {
@@ -66,7 +59,6 @@ public class MilitaryDialogFragment extends DialogFragment  {
 				   }
 			   });
 
-        
         initButtons();
         initImages();
         
@@ -85,7 +77,7 @@ public class MilitaryDialogFragment extends DialogFragment  {
         } catch (ClassCastException e) {
             // The activity doesn't implement the interface, throw exception
             throw new ClassCastException(activity.toString()
-                    + " must implement MilitaryDialogListener");
+					+ " must implement MilitaryDialogListener");
         }
     }
         

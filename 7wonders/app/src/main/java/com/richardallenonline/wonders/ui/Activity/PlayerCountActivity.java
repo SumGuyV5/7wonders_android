@@ -19,11 +19,12 @@ import android.widget.RadioGroup;
 import android.widget.RadioButton;
 
 public class PlayerCountActivity extends Activity
-		implements PastPlayersDialogFragment.PastPlayersDialogListener, DeletePlayersDialogFragment.DeletePlayersDialogListener {
+		implements PastPlayersDialogFragment.PastPlayersDialogListener,
+		DeletePlayersDialogFragment.DeletePlayersDialogListener {
 
 	private WondersApp app = null;
 
-	private final int[] radioidArray = {R.id.radio0, R.id.radio1, R.id.radio2, R.id.radio3,
+	private final int[] radioidArray = { R.id.radio0, R.id.radio1, R.id.radio2, R.id.radio3,
 			R.id.radio4, R.id.radio5, R.id.radio6 };
 	
 	@Override
@@ -50,8 +51,7 @@ public class PlayerCountActivity extends Activity
 		// Handle action bar item clicks here. The action bar will
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
+		if (item.getItemId() == R.id.action_settings) {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);

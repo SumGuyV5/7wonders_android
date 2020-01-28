@@ -63,7 +63,8 @@ public class PastPlayersDialogFragment extends DialogFragment {
 
         CharSequence[] array = {};
         return builder
-                .setMultiChoiceItems(descriptions.toArray(array), null, new DialogInterface.OnMultiChoiceClickListener() {
+                .setMultiChoiceItems(descriptions.toArray(array), null,
+                        new DialogInterface.OnMultiChoiceClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which, boolean isChecked) {
                         if (isChecked) {
@@ -127,7 +128,8 @@ public class PastPlayersDialogFragment extends DialogFragment {
                             public void onClick(DialogInterface dialog, int which) {
                                 if (!etInput.getText().toString().isEmpty()) {
                                     try {
-                                        app.db().Add(new PlayersDataset(-1, etInput.getText().toString(), 0));
+                                        app.db().Add(new PlayersDataset(-1, etInput.getText()
+                                                .toString(), 0));
                                         pastPlayers.clear();
                                         pastPlayers.addAll(app.db().getPlayers());
                                     } catch (Exception e) {

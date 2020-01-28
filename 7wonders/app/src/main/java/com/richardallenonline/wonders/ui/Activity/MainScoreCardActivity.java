@@ -26,8 +26,9 @@ public class MainScoreCardActivity extends Activity
 	implements MilitaryDialogFragment.MilitaryDialogListener {
 	PlaceholderFragment fragment = null;
 
-	private final int[] buttonsidArray = {R.id.buttonPlayer1, R.id.buttonPlayer2, R.id.buttonPlayer3, R.id.buttonPlayer4, R.id.buttonPlayer5,
-			R.id.buttonPlayer6, R.id.buttonPlayer7, R.id.buttonPlayer8 };
+	private final int[] buttonsidArray = {R.id.buttonPlayer1, R.id.buttonPlayer2,
+			R.id.buttonPlayer3, R.id.buttonPlayer4, R.id.buttonPlayer5, R.id.buttonPlayer6,
+			R.id.buttonPlayer7, R.id.buttonPlayer8 };
 
 	private WondersApp app = null;
 		
@@ -75,13 +76,15 @@ public class MainScoreCardActivity extends Activity
 	 * A placeholder fragment containing a simple view.
 	 */
 	public static class PlaceholderFragment extends Fragment {
-		private final int[] layoutidArray = {R.id.layoutPlayer1, R.id.layoutPlayer2, R.id.layoutPlayer3, R.id.layoutPlayer4,
-				R.id.layoutPlayer5, R.id.layoutPlayer6, R.id.layoutPlayer7, R.id.layoutPlayer8};
-		private final int[] editTextidArray = {R.id.editTextPlayer1, R.id.editTextPlayer2, R.id.editTextPlayer3, R.id.editTextPlayer4,
-				R.id.editTextPlayer5, R.id.editTextPlayer6, R.id.editTextPlayer7, R.id.editTextPlayer8};
-		private final int[] textidArray = {R.id.textViewPlayer1Score, R.id.textViewPlayer2Score, R.id.textViewPlayer3Score,
-				R.id.textViewPlayer4Score, R.id.textViewPlayer5Score, R.id.textViewPlayer6Score, R.id.textViewPlayer7Score,
-				R.id.textViewPlayer8Score };
+		private final int[] layoutidArray = { R.id.layoutPlayer1, R.id.layoutPlayer2,
+				R.id.layoutPlayer3, R.id.layoutPlayer4, R.id.layoutPlayer5, R.id.layoutPlayer6,
+				R.id.layoutPlayer7, R.id.layoutPlayer8 };
+		private final int[] editTextidArray = { R.id.editTextPlayer1, R.id.editTextPlayer2,
+				R.id.editTextPlayer3, R.id.editTextPlayer4, R.id.editTextPlayer5,
+				R.id.editTextPlayer6, R.id.editTextPlayer7, R.id.editTextPlayer8 };
+		private final int[] textidArray = { R.id.textViewPlayer1Score, R.id.textViewPlayer2Score,
+				R.id.textViewPlayer3Score, R.id.textViewPlayer4Score, R.id.textViewPlayer5Score,
+				R.id.textViewPlayer6Score, R.id.textViewPlayer7Score, R.id.textViewPlayer8Score };
 
 		private View mainView = null;
 
@@ -92,16 +95,14 @@ public class MainScoreCardActivity extends Activity
 
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_score_card,
-					container, false);
-			mainView = rootView;
+								 Bundle savedInstanceState) {
+			mainView = inflater.inflate(R.layout.fragment_score_card, container, false);
 
 			app = (WondersApp)getActivity().getApplication();
 
 			PlayerCountChange();
 
-			return rootView;
+			return mainView;
 		}
 		
 		@Override
@@ -111,10 +112,9 @@ public class MainScoreCardActivity extends Activity
 		}
 
 		public void Refresh() {
-			TextView txt = null;
 			for (int id = 0; id < app.getPlayerCount(); id++) {
-				txt = mainView.findViewById(textidArray[id]);
-				txt.setText(((Integer) app.getPlayerScoreData().get(id).getFinalScore()).toString());
+				TextView txt = mainView.findViewById(textidArray[id]);
+				txt.setText(((Integer)app.getPlayerScoreData().get(id).getFinalScore()).toString());
 			}			
 		}
 
@@ -125,17 +125,15 @@ public class MainScoreCardActivity extends Activity
 		}
 		
 		private void Hide() {
-			LinearLayout ll = null;		
 			for ( int id: layoutidArray) {
-				ll = mainView.findViewById(id);
+				LinearLayout ll = mainView.findViewById(id);
 				ll.setVisibility(View.INVISIBLE);
 			}
 		}
 		
 		private void Show() {
-			LinearLayout ll = null;
 			for (int id = 0; id < app.getPlayerCount(); id++) {
-				ll = mainView.findViewById(layoutidArray[id]);
+                LinearLayout ll = mainView.findViewById(layoutidArray[id]);
 				ll.setVisibility(View.VISIBLE);
 				EditTextListener(editTextidArray[id]);
 			}			
@@ -246,7 +244,8 @@ public class MainScoreCardActivity extends Activity
 		    newFragment.setAge(age);
 		    newFragment.setPlayer(player, app.getPlayerScoreData().size());
 		} else {
-			PlaceholderFragment fragment = (PlaceholderFragment)getFragmentManager().findFragmentById(R.id.container);
+			PlaceholderFragment fragment = (PlaceholderFragment)getFragmentManager()
+					.findFragmentById(R.id.container);
 			fragment.Refresh();
 		}
 	}

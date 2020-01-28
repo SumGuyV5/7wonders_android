@@ -5,7 +5,7 @@ import android.database.Cursor;
 
 import com.richardallenonline.wonders.EqualsBy;
 
-public abstract class Dataset implements Comparable<Object>{
+public abstract class Dataset implements Comparable<Object> {
 	private EqualsBy equalsBy = EqualsBy.ID;
 
 	public void setEqualsBy() { setEqualsBy(EqualsBy.ID); }

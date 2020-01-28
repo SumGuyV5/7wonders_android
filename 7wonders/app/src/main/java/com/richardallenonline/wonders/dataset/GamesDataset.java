@@ -43,8 +43,9 @@ public class GamesDataset extends Dataset {
 
 
 	public GamesDataset(GamesDataset copy) {
-		this(copy.getId(), copy.getPlayerKey1(), copy.getPlayerKey2(), copy.getPlayerKey3(), copy.getPlayerKey4(), copy.getPlayerKey5(),
-				copy.getPlayerKey6(), copy.getPlayerKey7(), copy.getPlayerKey8(), copy.getDatetime());
+		this(copy.getId(), copy.getPlayerKey1(), copy.getPlayerKey2(), copy.getPlayerKey3(),
+				copy.getPlayerKey4(), copy.getPlayerKey5(), copy.getPlayerKey6(),
+				copy.getPlayerKey7(), copy.getPlayerKey8(), copy.getDatetime());
 	}
 
 	public void Clean() {
@@ -80,9 +81,15 @@ public class GamesDataset extends Dataset {
 				rtn = (id == other.getId());
 				break;
 			case EveryThing:
-				rtn = ((playerKey1 == other.getPlayerKey1()) && (playerKey2 == other.getPlayerKey2()) && (playerKey3 == other.getPlayerKey3()) && (playerKey4 == other.getPlayerKey4())
-						&& (playerKey5 == other.getPlayerKey5()) && (playerKey6 == other.getPlayerKey6()) && (playerKey7 == other.getPlayerKey7()) && (playerKey8 == other.getPlayerKey8())
-						&& (datetime == other.getDatetime()));
+				rtn = ((playerKey1 == other.getPlayerKey1()) &&
+						(playerKey2 == other.getPlayerKey2()) &&
+						(playerKey3 == other.getPlayerKey3()) &&
+						(playerKey4 == other.getPlayerKey4()) &&
+						(playerKey5 == other.getPlayerKey5()) &&
+						(playerKey6 == other.getPlayerKey6()) &&
+						(playerKey7 == other.getPlayerKey7()) &&
+						(playerKey8 == other.getPlayerKey8()) &&
+						(datetime == other.getDatetime()));
 				break;
 		}
 		return rtn;

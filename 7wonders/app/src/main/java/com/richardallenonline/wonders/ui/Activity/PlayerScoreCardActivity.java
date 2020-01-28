@@ -53,9 +53,10 @@ public class PlayerScoreCardActivity extends Activity
 	 * A placeholder fragment containing a simple view.
 	 */
 	public static class PlaceholderFragment extends Fragment {
-		private final int[] textidArray = {R.id.textViewPlayerName, R.id.editTextMilitary, R.id.editTextMoney, R.id.editTextWonder,
-				R.id.editTextCivilian, R.id.editTextCommercial, R.id.editTextGuild, R.id.editTextScience, R.id.editTextLeaders,
-				R.id.editTextCities, R.id.editTextDebt, R.id.textViewTotal };
+		private final int[] textidArray = { R.id.textViewPlayerName, R.id.editTextMilitary,
+				R.id.editTextMoney, R.id.editTextWonder, R.id.editTextCivilian,
+				R.id.editTextCommercial, R.id.editTextGuild, R.id.editTextScience,
+				R.id.editTextLeaders, R.id.editTextCities, R.id.editTextDebt, R.id.textViewTotal };
 		private int playerNum = 0;
 		private View mainView = null;
 		private WondersApp app = null;
@@ -66,19 +67,16 @@ public class PlayerScoreCardActivity extends Activity
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(
-					R.layout.fragment_player_score_card, container, false);
-			mainView = rootView;
+			mainView = inflater.inflate(R.layout.fragment_player_score_card, container, false);
 			
 			PlayerScoreCardActivity activity = (PlayerScoreCardActivity)getActivity();
 			app = (WondersApp)activity.getApplication();
 			Bundle extras = activity.getIntent().getExtras();
-			if (extras != null) {
+			if (extras != null)
 				setPlayerNum(extras.getInt("PlayerNumber"));
-			}
 			
 			Setup();
-			return rootView;
+			return mainView;
 		}
 		
 		@Override
@@ -222,12 +220,14 @@ public class PlayerScoreCardActivity extends Activity
 	}
 	
 	public void scoreButton( View view ) {
-		PlaceholderFragment fragment = (PlaceholderFragment)getFragmentManager().findFragmentById(R.id.container);
+		PlaceholderFragment fragment = (PlaceholderFragment)getFragmentManager()
+				.findFragmentById(R.id.container);
 		fragment.UpdateData();
 	}
 	
 	public void scienceHelpButton( View view ) {
-		PlaceholderFragment fragment = (PlaceholderFragment)getFragmentManager().findFragmentById(R.id.container);
+		PlaceholderFragment fragment = (PlaceholderFragment)getFragmentManager()
+				.findFragmentById(R.id.container);
 
 		ScienceCalculatorDialogFragment newFragment = new ScienceCalculatorDialogFragment();
 		//newFragment.setPlayerNum(fragment.getPlayerNum());
@@ -240,7 +240,8 @@ public class PlayerScoreCardActivity extends Activity
 	
 	@Override
 	public void onDialogClose() {
-		PlaceholderFragment fragment = (PlaceholderFragment)getFragmentManager().findFragmentById(R.id.container);
+		PlaceholderFragment fragment = (PlaceholderFragment)getFragmentManager()
+				.findFragmentById(R.id.container);
 		fragment.Setup();
 	}
 }

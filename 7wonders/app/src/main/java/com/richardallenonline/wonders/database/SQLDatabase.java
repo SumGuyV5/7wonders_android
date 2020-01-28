@@ -123,8 +123,10 @@ public class SQLDatabase extends SQLiteOpenHelper {
 			COLUMN_VITORY_3 + " integer not null, " + 
 			COLUMN_VITORY_5 + " integer not null, " +
 			COLUMN_WONDER_TYPE +  "integer not null, " +
-			" FOREIGN KEY (" + COLUMN_PLAYER_KEY + ") REFERENCES " + PLAYER.TABLE_NAME + " (" + PLAYER.COLUMN_ID + "), " +
-			" FOREIGN KEY (" + COLUMN_GAME_KEY + ") REFERENCES " + GAMES.TABLE_NAME + " (" + GAMES.COLUMN_ID + ") " + ");";
+			" FOREIGN KEY (" + COLUMN_PLAYER_KEY + ") REFERENCES " + PLAYER.TABLE_NAME +
+				 " (" + PLAYER.COLUMN_ID + "), " +
+			" FOREIGN KEY (" + COLUMN_GAME_KEY + ") REFERENCES " + GAMES.TABLE_NAME +
+				 " (" + GAMES.COLUMN_ID + ") " + ");";
 	}
 	
 	public SQLDatabase(Context context) {
@@ -144,8 +146,8 @@ public class SQLDatabase extends SQLiteOpenHelper {
 	
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-		Log.w(SQLDatabase.class.getName(), "Upgrading database from version " + oldVersion + " to " 
-				+ newVersion + ", which will destroy all old data");
+		Log.w(SQLDatabase.class.getName(), "Upgrading database from version " + oldVersion +
+				" to " + newVersion + ", which will destroy all old data");
 		for (String table: allTablesCreate)
 			db.execSQL("DROP TABLE IF EXISTS " + table);
 	    onCreate(db);

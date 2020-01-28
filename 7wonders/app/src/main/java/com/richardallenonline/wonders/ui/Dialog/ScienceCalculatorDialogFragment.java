@@ -24,14 +24,16 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class ScienceCalculatorDialogFragment extends DialogFragment  {
-	private static final int[] textidArray = {R.id.textViewTablet, R.id.textViewGear, R.id.textViewCompass, R.id.textViewWild,
-		R.id.textViewScore};
+	private static final int[] textidArray = { R.id.textViewTablet, R.id.textViewGear,
+			R.id.textViewCompass, R.id.textViewWild, R.id.textViewScore };
 	
-	private static final int[] wheelidArray = {R.id.wheelTablet, R.id.wheelGear, R.id.wheelCompass, R.id.wheelWild};
+	private static final int[] wheelidArray = { R.id.wheelTablet, R.id.wheelGear, R.id.wheelCompass,
+			R.id.wheelWild };
 	
-	private static final int[] clickidArray = {R.id.buttonGO, R.id.buttonRESET};
-	private static final int[] clickImageidArray = {R.id.imageViewTablet, R.id.imageViewGear, R.id.imageViewCompass, 
-		R.id.imageViewTabletWild, R.id.imageViewSlash1, R.id.imageViewGearWild, R.id.imageViewSlash2, R.id.imageViewCompassWild };
+	private static final int[] clickidArray = { R.id.buttonGO, R.id.buttonRESET };
+	private static final int[] clickImageidArray = { R.id.imageViewTablet, R.id.imageViewGear,
+			R.id.imageViewCompass, R.id.imageViewTabletWild, R.id.imageViewSlash1,
+			R.id.imageViewGearWild, R.id.imageViewSlash2, R.id.imageViewCompassWild };
 	
 	private ScienceCalculator score = new ScienceCalculator(0, 0, 0, 0);
 		
@@ -103,9 +105,8 @@ public class ScienceCalculatorDialogFragment extends DialogFragment  {
     }
 	
 	private void initButtons() {
-		Button button = null;
 		for (int id : clickidArray) {
-			button = mainView.findViewById(id);
+			Button button = mainView.findViewById(id);
 			button.setOnClickListener(new OnClickListener() {
 				@Override
 				public void onClick(View view) {
@@ -123,9 +124,8 @@ public class ScienceCalculatorDialogFragment extends DialogFragment  {
 	}
 
 	private void initImages() {
-		ImageView image = null;
 		for (int id : clickImageidArray) {
-			image = mainView.findViewById(id);
+			ImageView image = mainView.findViewById(id);
 			image.setOnClickListener(new OnClickListener() {
 				@Override
 				public void onClick(View view) {
@@ -136,11 +136,8 @@ public class ScienceCalculatorDialogFragment extends DialogFragment  {
 	}
 
 	private void initWheel() {
-
-        WheelView wheel = null;
-
         for (int id : wheelidArray) {
-	        wheel = mainView.findViewById(id);
+	        WheelView wheel = mainView.findViewById(id);
 	        wheel.setViewAdapter(new NumericWheelAdapter(mainView.getContext(), 0, 9));
 
 	        wheel.setCyclic(true);
@@ -153,13 +150,10 @@ public class ScienceCalculatorDialogFragment extends DialogFragment  {
     }
 
 	public void goButton(View view) {
-    	WheelView wheel = null;
-    	TextView text = null;
     	int tablet = 0, gear = 0, compass = 0, wild = 0;
 
-
     	for (int id : wheelidArray) {
-    		wheel = mainView.findViewById(id);
+    		WheelView wheel = mainView.findViewById(id);
     		int tmp = wheel.getCurrentItem();
 
     		switch (id) {
@@ -184,7 +178,7 @@ public class ScienceCalculatorDialogFragment extends DialogFragment  {
     	ll.setVisibility(View.VISIBLE);
 
     	for (int id : textidArray) {
-    		text = mainView.findViewById(id);
+			TextView text = mainView.findViewById(id);
     		switch (id) {
 	    		case R.id.textViewTablet:
 	    			text.setText(((Integer)score.getTablet()).toString());
@@ -206,16 +200,13 @@ public class ScienceCalculatorDialogFragment extends DialogFragment  {
     }
 
 	public void resetButton(View view) {
-    	WheelView wheel = null;
-    	TextView text = null;
-
     	for (int id : wheelidArray) {
-    		wheel = mainView.findViewById(id);
+    		WheelView wheel = mainView.findViewById(id);
     		wheel.setCurrentItem(0);
     	}
 
     	for (int id : textidArray) {
-    		text = mainView.findViewById(id);
+			TextView text = mainView.findViewById(id);
     		text.setText("");
     	}
 
@@ -247,8 +238,6 @@ public class ScienceCalculatorDialogFragment extends DialogFragment  {
     }
     
     public void okButton() {
-		//goButton(null);
-
 		app.getPlayerScoreData().get(playerNumber).setSciencePoints(score.getScore());
 		app.getPlayerScoreData().get(playerNumber).setTabletCount(score.getTablet());
 		app.getPlayerScoreData().get(playerNumber).setGearCount(score.getGear());

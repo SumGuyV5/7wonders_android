@@ -138,7 +138,8 @@ public class WondersApp extends Application {
             playerScoreData.add(new PlayerScoreDataset(player));
 
         for (int count = playerScoreData.size() + 1; playerScoreData.size() < playerCount; count++) {
-            int idx = playersData.indexOf(new PlayersDataset(-1, "Player " + ((Integer) count).toString(), 0));
+            int idx = playersData.indexOf(new PlayersDataset(-1, "Player " +
+                    ((Integer)count).toString(), 0));
             if (idx != -1)
                 playerScoreData.add( new PlayerScoreDataset(playersData.get(idx)));
             else {

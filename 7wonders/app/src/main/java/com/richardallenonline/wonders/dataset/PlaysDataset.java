@@ -73,15 +73,22 @@ public class PlaysDataset extends Dataset {
 	}
 
 	public PlaysDataset(PlaysDataset copy) {
-		this(copy.getId(), copy.getPlayerKey(), copy.getGameKey(), copy.getMilitaryPoints(), copy.getMoneyPoints(), copy.getWonderPoints(),
-				copy.getCivilianPoints(), copy.getCommercialPoints(), copy.getSciencePoints(), copy.getGuildPoints(), copy.getLeaderPoints(),
-				copy.getCityPoints(), copy.getDebtPoints(), copy.getFinalScore(), copy.getTabletCount(), copy.getGearCount(), copy.getCompassCount(),
-				copy.getWildCount(), copy.getDefeatToken(), copy.getVitoryTokenAge1(), copy.getVitoryTokenAge2(), copy.getVitoryTokenAge3(),
+		this(copy.getId(), copy.getPlayerKey(), copy.getGameKey(), copy.getMilitaryPoints(),
+				copy.getMoneyPoints(), copy.getWonderPoints(), copy.getCivilianPoints(),
+				copy.getCommercialPoints(), copy.getSciencePoints(), copy.getGuildPoints(),
+				copy.getLeaderPoints(), copy.getCityPoints(), copy.getDebtPoints(),
+				copy.getFinalScore(), copy.getTabletCount(), copy.getGearCount(),
+				copy.getCompassCount(), copy.getWildCount(), copy.getDefeatToken(),
+				copy.getVitoryTokenAge1(), copy.getVitoryTokenAge2(), copy.getVitoryTokenAge3(),
 				copy.getWonder());
 	}
 	
 	public PlaysDataset(PlayersDataset value) {
-		this((long)-1, value.getId(), (long)-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, null);
+		this((long)-1, value.getId(), (long)-1, 0, 0, 0,
+				0, 0, 0, 0, 0,
+				0, 0, 0, 0, 0, 0,
+				0, 0, 0, 0, 0,
+				null);
 	}
 
 	public void Clean() {
@@ -126,8 +133,6 @@ public class PlaysDataset extends Dataset {
 		boolean rtn = false;
 		switch (EqualsBy.getId(super.getEqualsBy().getValue() | other.getEqualsBy().getValue())) {
 			case ID:
-				rtn = (playerKey == other.getPlayerKey());
-				break;
 			case EveryThing:
 				rtn = (playerKey == other.getPlayerKey());
 				break;

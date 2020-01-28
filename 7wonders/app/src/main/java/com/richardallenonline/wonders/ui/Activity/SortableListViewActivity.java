@@ -29,10 +29,9 @@ public class SortableListViewActivity extends ListActivity {
 	private TouchInterceptor.DropListener mDropListener = new TouchInterceptor.DropListener() {
 		@Override
 		public void drop(int from, int to) {
-			System.out.println("Droplisten from:"+from+" to:"+to);
+			System.out.println("Droplisten from:" + from + " to:" + to);
 		
 			//Assuming that item is moved up the list
-		
 			int direction = -1;
 			int loop_start = from;
 			int loop_end = to;
@@ -44,22 +43,20 @@ public class SortableListViewActivity extends ListActivity {
 		
 			Object target = sArray[from];		
 		
-			for(int i=loop_start;i!=loop_end;i=i+direction){
-				sArray[i] = sArray[i+direction];
+			for(int i = loop_start; i != loop_end; i = i + direction){
+				sArray[i] = sArray[i + direction];
 			}		
 		
 			sArray[to] = target;		
 		
 			System.out.println("Changed array is:" + Arrays.toString(sArray));
-			((BaseAdapter) mList.getAdapter()).notifyDataSetChanged();
+			((BaseAdapter)mList.getAdapter()).notifyDataSetChanged();
 		}
 	};
-	private Object[] sArray  = {"Item 0", "Item 1", "Item 2", 42, false, "Item 5", "Item 6"};
+	private Object[] sArray = { "Item 0", "Item 1", "Item 2", 42, false, "Item 5", "Item 6" };
 
 
 	/** Called when the activity is first created. */
-
-
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -69,9 +66,7 @@ public class SortableListViewActivity extends ListActivity {
 		List<String> playerNames = ((WondersApp)getApplication()).getNames();
 		
 		sArray = playerNames.toArray();
-		
-		//mListener = (SortableListViewListener)this.startActivityForResult(intent, requestCode);
-		
+
 		ArrayAdapter<Object> adp = new ArrayAdapter<Object>(this, R.layout.listrow, sArray);
 		setListAdapter(adp);
 		
@@ -94,6 +89,5 @@ public class SortableListViewActivity extends ListActivity {
 			data.add((String)ojt);
 		((WondersApp)getApplication()).Reorder(data);
 		finish();
-		//mListener.onDialogClose();
 	}
 }
