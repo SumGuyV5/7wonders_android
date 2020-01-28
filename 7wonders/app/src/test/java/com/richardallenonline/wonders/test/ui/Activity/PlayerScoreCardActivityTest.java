@@ -31,13 +31,14 @@ import static org.robolectric.Shadows.shadowOf;
 @Config(constants = BuildConfig.class)
 public class PlayerScoreCardActivityTest {
 
-    private final int[] buttonIdArray = { R.id.buttonScore, R.id.buttonScienceHelp, R.id.buttonBack };
+    private final int[] buttonIdArray = { R.id.buttonScore, R.id.buttonScienceHelp,
+            R.id.buttonBack };
 
-    private final int[] editTextIdArray = { R.id.editTextMilitary, R.id.editTextMoney, R.id.editTextWonder,
-            R.id.editTextCivilian, R.id.editTextCommercial, R.id.editTextGuild, R.id.editTextScience, R.id.editTextLeaders,
-            R.id.editTextCities, R.id.editTextDebt };
+    private final int[] editTextIdArray = { R.id.editTextMilitary, R.id.editTextMoney,
+            R.id.editTextWonder, R.id.editTextCivilian, R.id.editTextCommercial, R.id.editTextGuild,
+            R.id.editTextScience, R.id.editTextLeaders, R.id.editTextCities, R.id.editTextDebt };
 
-    private final int[] textIdArray = {R.id.textViewPlayerName, R.id.textViewTotal};
+    private final int[] textIdArray = { R.id.textViewPlayerName, R.id.textViewTotal };
 
     private PlayerScoreCardActivity activity = null;
 
@@ -68,7 +69,6 @@ public class PlayerScoreCardActivityTest {
                 System.out.println(txt.getId() + " - passed");
             }catch(AssertionError e){
                 System.out.println(txt.getId() + " - failed");
-
                 throw e;
             }
         }
@@ -84,7 +84,6 @@ public class PlayerScoreCardActivityTest {
                 System.out.println(txt.getId() + " - passed");
             }catch(AssertionError e){
                 System.out.println(txt.getId() + " - failed");
-
                 throw e;
             }
         }
@@ -100,7 +99,6 @@ public class PlayerScoreCardActivityTest {
                 System.out.println(btn.getText() + " - passed");
             }catch (AssertionError e){
                 System.out.println(btn.getText() + " - failed");
-
                 throw e;
             }
         }
@@ -116,7 +114,6 @@ public class PlayerScoreCardActivityTest {
                 System.out.println(txt.getId() + " - passed");
             }catch(AssertionError e){
                 System.out.println(txt.getId() + " - failed");
-
                 throw e;
             }
         }
@@ -130,7 +127,6 @@ public class PlayerScoreCardActivityTest {
             System.out.println("PlayerName - passed");
         }catch(AssertionError e){
             System.out.println("PlayerName - failed");
-
             throw e;
         }
     }
@@ -143,7 +139,6 @@ public class PlayerScoreCardActivityTest {
             System.out.println("Total - passed");
         }catch(AssertionError e){
             System.out.println("Total - failed");
-
             throw e;
         }
     }
@@ -175,7 +170,7 @@ public class PlayerScoreCardActivityTest {
     }
 
     @Test
-     public void clickingScienceImage_shouldScienceCalculatorAlertDialog() throws Exception {
+    public void clickingScienceImage_shouldScienceCalculatorAlertDialog() throws Exception {
         activity.findViewById(R.id.imageViewScienceScore).performClick();
 
         AlertDialog alert = ShadowAlertDialog.getLatestAlertDialog();

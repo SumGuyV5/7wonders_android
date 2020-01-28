@@ -144,7 +144,8 @@ public class ScienceCalculatorTest {
         CheckAllOutputs(9, 9, 18, 0, 549, "ConstructorValues Nine of Each plus Wild");
     }
 
-    private void CheckAllOutputs(int tablet, int gear, int compass, int wild, int score, String msg) {
+    private void CheckAllOutputs(int tablet, int gear, int compass, int wild,
+                                 int score, String msg) {
         String what = "";
         try{
             what = msg + " Tablet ";

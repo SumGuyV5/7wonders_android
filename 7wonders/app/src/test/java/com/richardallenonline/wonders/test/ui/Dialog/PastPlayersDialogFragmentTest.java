@@ -109,7 +109,8 @@ public class PastPlayersDialogFragmentTest {
 
         assertThat(app.db().getPlayers().size()).isEqualTo(count + 1);
 
-        assertThat(dialogFragment.getPastPlayer(dialogFragment.getPastPlayerSize() - 1).getName()).isEqualTo("Jeff");
+        assertThat(dialogFragment.getPastPlayer(dialogFragment.getPastPlayerSize() - 1)
+                .getName()).isEqualTo("Jeff");
     }
 
     @Test
@@ -126,7 +127,8 @@ public class PastPlayersDialogFragmentTest {
 
         assertThat(app.db().getPlayers().size()).isEqualTo(count);
 
-        assertThat(dialogFragment.getPastPlayer(dialogFragment.getPastPlayerSize() - 1).getName()).isEqualTo("Damon");
+        assertThat(dialogFragment.getPastPlayer(dialogFragment.getPastPlayerSize() - 1)
+                .getName()).isEqualTo("Damon");
     }
 
     @Test
@@ -143,7 +145,8 @@ public class PastPlayersDialogFragmentTest {
 
         assertThat(app.db().getPlayers().size()).isEqualTo(count);
 
-        assertThat(dialogFragment.getPastPlayer(dialogFragment.getPastPlayerSize() - 1).getName()).isEqualTo("Damon");
+        assertThat(dialogFragment.getPastPlayer(dialogFragment.getPastPlayerSize() - 1)
+                .getName()).isEqualTo("Damon");
     }
 
     @Test

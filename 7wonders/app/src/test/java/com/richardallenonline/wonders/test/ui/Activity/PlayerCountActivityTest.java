@@ -54,16 +54,16 @@ public class PlayerCountActivityTest {
 
     @Test
     public void checkButtonsNotNull() throws Exception {
-        final int[] buttonArray = {R.id.buttonGO, R.id.buttonPastPlayers, R.id.buttonDeletePlayers };
-        Button btn = null;
+        final int[] buttonArray = { R.id.buttonGO, R.id.buttonPastPlayers,
+                R.id.buttonDeletePlayers };
+
         for (int button : buttonArray) {
-            btn = activity.findViewById(button);
+            Button btn = activity.findViewById(button);
             try{
                 assertThat(btn).isNotNull();
                 System.out.println(btn.getText() + " - passed");
             }catch(AssertionError e){
                 System.out.println(btn.getText() + " - failed");
-
                 throw e;
             }
         }
@@ -72,14 +72,13 @@ public class PlayerCountActivityTest {
     //Ok check ui elements
     @Test
     public void checkRadioButtonDefault() throws Exception {
-        final int[] radioidArray = {R.id.radio0, R.id.radio1, R.id.radio2, R.id.radio3,
+        final int[] radioidArray = { R.id.radio0, R.id.radio1, R.id.radio2, R.id.radio3,
                 R.id.radio4, R.id.radio5, R.id.radio6 };
 
         RadioGroup radioGroup = activity.findViewById(R.id.radioGroupPlayerCount);
-        RadioButton radioButton = null;
 
         for (int radioId: radioidArray) {
-            radioButton = radioGroup.findViewById(radioId);
+            RadioButton radioButton = radioGroup.findViewById(radioId);
             try{
                 if (radioId == radioidArray[0])
                     assertThat(radioButton.isChecked()).isTrue();
@@ -88,7 +87,6 @@ public class PlayerCountActivityTest {
                 System.out.println(radioButton.getText() + " - passed");
             }catch(AssertionError e){
                 System.out.println(radioButton.getText() + " - failed");
-
                 throw e;
             }
         }

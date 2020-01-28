@@ -19,7 +19,8 @@ public class testData {
 
     public void setupGenPlayers() {
         for (int count = 1; count <= 8; count++) {
-            app.setPlayerScoreDataName("Player " + ((Integer)count).toString(), new PlayerScoreDataset());
+            app.setPlayerScoreDataName("Player " + ((Integer)count).toString(),
+                    new PlayerScoreDataset());
         }
 
         app.setPlayerCount(8);

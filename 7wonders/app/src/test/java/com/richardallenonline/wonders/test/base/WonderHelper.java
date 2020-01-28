@@ -22,7 +22,6 @@ public class WonderHelper {
             System.out.println(txt + " - passed");
         }catch(AssertionError e){
             System.out.println(txt + " - failed");
-
             throw e;
         }
     }

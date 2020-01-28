@@ -195,7 +195,8 @@ public class ScienceCalculatorDialogFragmentTest extends testDataScienceCalculat
         sAlert.getView().findViewById(R.id.buttonGO).performClick();
     }
 
-    private void CheckAllOutput(int tablet, int gear, int compass, int wild, int total, String msg) throws Exception {
+    private void CheckAllOutput(int tablet, int gear, int compass, int wild, int total, String msg)
+            throws Exception {
 
         String what = "";
         try {

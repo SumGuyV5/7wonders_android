@@ -22,7 +22,8 @@ public class DatabaseTest {
     Database tst = null;
     @Before
     public void setup() {
-        WondersApp app = (WondersApp) Robolectric.setupActivity(PlayerCountActivity.class).getApplication();
+        WondersApp app = (WondersApp) Robolectric.setupActivity(PlayerCountActivity.class)
+                .getApplication();
         //app.setPlayerCount(8);
         tst = new Database(app);
     }

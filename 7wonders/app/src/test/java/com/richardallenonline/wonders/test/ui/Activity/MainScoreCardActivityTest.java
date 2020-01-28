@@ -29,10 +29,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 @RunWith(RobolectricGradleTestRunner.class)
 @Config(constants = BuildConfig.class)
 public class MainScoreCardActivityTest {
-    private final int[] buttonIdArray = {R.id.buttonPlayer1, R.id.buttonPlayer2, R.id.buttonPlayer3, R.id.buttonPlayer4, R.id.buttonPlayer5,
-            R.id.buttonPlayer6, R.id.buttonPlayer7, R.id.buttonPlayer8 };
+    private final int[] buttonIdArray = { R.id.buttonPlayer1, R.id.buttonPlayer2,
+            R.id.buttonPlayer3, R.id.buttonPlayer4, R.id.buttonPlayer5, R.id.buttonPlayer6,
+            R.id.buttonPlayer7, R.id.buttonPlayer8 };
 
-    private final int[] imageViewIdArray = {R.id.imageViewAge1,  R.id.imageViewAge2, R.id.imageViewAge3};
+    private final int[] imageViewIdArray = { R.id.imageViewAge1,  R.id.imageViewAge2,
+            R.id.imageViewAge3 };
 
     private MainScoreCardActivity activity = null;
 
@@ -53,16 +55,13 @@ public class MainScoreCardActivityTest {
 
     @Test
     public void checkButtonsNotNull() throws Exception {
-
-        Button btn = null;
         for (int buttonId : buttonIdArray) {
-            btn = activity.findViewById(buttonId);
+            Button btn = activity.findViewById(buttonId);
             try{
                 assertThat(btn).isNotNull();
                 System.out.println(btn.getText() + " - passed");
             }catch(AssertionError e){
                 System.out.println(btn.getText() + " - failed");
-
                 throw e;
             }
         }
@@ -70,15 +69,13 @@ public class MainScoreCardActivityTest {
 
     @Test
     public void checkImagesNotNull()  throws Exception {
-        ImageView imgView = null;
         for (int imageViewId : imageViewIdArray) {
-            imgView = activity.findViewById(imageViewId);
+            ImageView imgView = activity.findViewById(imageViewId);
             try{
                 assertThat(imgView).isNotNull();
                 System.out.println("ImageView - passed");
             }catch(AssertionError e){
                 System.out.println("ImageView - failed");
-
                 throw e;
             }
         }
@@ -86,19 +83,16 @@ public class MainScoreCardActivityTest {
 
     @Test
     public void clickingScoreButtons_shouldStartScoreCardActivity() throws Exception {
-        Button btn = null;
-        Intent expectedIntent = new Intent(activity, PlayerScoreCardActivity.class);
         for (int playerNum = 0; playerNum < app.getPlayerCount(); playerNum++) {
-        //for (int buttonId: buttonIdArray) {
+            Intent expectedIntent = new Intent(activity, PlayerScoreCardActivity.class);
             expectedIntent.putExtra("PlayerNumber", playerNum);
-            btn = activity.findViewById(buttonIdArray[playerNum]);
+            Button btn = activity.findViewById(buttonIdArray[playerNum]);
             try{
                 btn.performClick();
                 assertThat(shadowOf(activity).getNextStartedActivity()).isEqualTo(expectedIntent);
                 System.out.println(btn.getText() + " - passed");
             }catch(AssertionError e){
                 System.out.println(btn.getText() + " - failed");
-
                 throw e;
             }
         }

@@ -16,26 +16,24 @@ import static org.assertj.core.api.Assertions.assertThat;
  * Created by Laptop on 11/12/2015.
  */
 public class testDataScienceCalculatorDialog {
-    protected static final int[] textidArray = {R.id.textViewTablet, R.id.textViewGear, R.id.textViewCompass, R.id.textViewWild,
-            R.id.textViewScore};
+    protected static final int[] textidArray = { R.id.textViewTablet, R.id.textViewGear,
+            R.id.textViewCompass, R.id.textViewWild, R.id.textViewScore };
 
-    protected static final int[] wheelidArray = {R.id.wheelTablet, R.id.wheelGear, R.id.wheelCompass, R.id.wheelWild};
+    protected static final int[] wheelidArray = { R.id.wheelTablet, R.id.wheelGear,
+            R.id.wheelCompass, R.id.wheelWild };
 
     protected ShadowAlertDialog sAlert = null;
 
     protected void setupRandoData() {
-        WheelView wheel = null;
-        TextView text = null;
-
         Random r = new Random();
 
         for (int id: wheelidArray) {
-            wheel = sAlert.getView().findViewById(id);
+            WheelView wheel = sAlert.getView().findViewById(id);
             wheel.setCurrentItem(r.nextInt(9));
         }
 
         for (int id : textidArray) {
-            text = sAlert.getView().findViewById(id);
+            TextView text = sAlert.getView().findViewById(id);
             text.setText("99");
         }
     }
