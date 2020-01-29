@@ -6,7 +6,7 @@ import com.richardallenonline.wonders.WondersApp;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.RobolectricGradleTestRunner;
+import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -14,8 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Created by Laptop on 24/11/2015.
  */
-@RunWith(RobolectricGradleTestRunner.class)
-@Config(constants = BuildConfig.class)
+@RunWith(RobolectricTestRunner.class)
 public class WondersAppTest {
     WondersApp app = null;
 

@@ -16,7 +16,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
-import org.robolectric.RobolectricGradleTestRunner;
+import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowActivity;
 import org.robolectric.shadows.ShadowAlertDialog;
@@ -27,8 +27,7 @@ import static org.robolectric.Shadows.shadowOf;
 /**
  * Created by Laptop on 26/11/2015.
  */
-@RunWith(RobolectricGradleTestRunner.class)
-@Config(constants = BuildConfig.class)
+@RunWith(RobolectricTestRunner.class)
 public class PlayerScoreCardActivityTest {
 
     private final int[] buttonIdArray = { R.id.buttonScore, R.id.buttonScienceHelp,
@@ -42,8 +41,6 @@ public class PlayerScoreCardActivityTest {
 
     private PlayerScoreCardActivity activity = null;
 
-    private WondersApp app = null;
-
     @Before
     public void setup() {
         testData tstData = new testData();
@@ -51,7 +48,7 @@ public class PlayerScoreCardActivityTest {
 
         activity = Robolectric.setupActivity(PlayerScoreCardActivity.class);
 
-        app = (WondersApp)activity.getApplication();
+        WondersApp app = (WondersApp) activity.getApplication();
     }
 
     @Test
@@ -110,7 +107,7 @@ public class PlayerScoreCardActivityTest {
         for (int textId : editTextIdArray) {
             try{
                 txt = activity.findViewById(textId);
-                assertThat(txt.getText()).isEqualTo("0");
+                assertThat(txt.getText().toString()).isEqualTo("0");
                 System.out.println(txt.getId() + " - passed");
             }catch(AssertionError e){
                 System.out.println(txt.getId() + " - failed");

@@ -16,7 +16,7 @@ import org.junit.Test;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
-import org.robolectric.RobolectricGradleTestRunner;
+import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowAlertDialog;
 
@@ -26,16 +26,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Created by Richard on 29/08/2015.
  */
-@RunWith(RobolectricGradleTestRunner.class)
-@Config(constants = BuildConfig.class)
+@RunWith(RobolectricTestRunner.class)
+@Config()
 public class PlayerCountActivityTest {
     private PlayerCountActivity activity = null;
 
-    private WondersApp app = null;
-
     @Before
     public void setup() {
-        app = (WondersApp)Robolectric.setupActivity(PlayerCountActivity.class).getApplication();
+        WondersApp app = (WondersApp) Robolectric.setupActivity(PlayerCountActivity.class).getApplication();
         app.setPlayerCount(8);
         activity = Robolectric.setupActivity(PlayerCountActivity.class);
     }

@@ -13,11 +13,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
-import org.robolectric.RobolectricGradleTestRunner;
+import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowAlertDialog;
-
-import java_cup.Main;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.robolectric.Shadows.shadowOf;
@@ -25,10 +23,8 @@ import static org.robolectric.Shadows.shadowOf;
 /**
  * Created by Laptop on 10/12/2015.
  */
-@RunWith(RobolectricGradleTestRunner.class)
-@Config(constants = BuildConfig.class)
+@RunWith(RobolectricTestRunner.class)
 public class MilitaryDialogFragmentTest {
-    private MainScoreCardActivity activity = null;
 
     private MilitaryDialogFragment dialogFragment = null;
 
@@ -42,9 +38,9 @@ public class MilitaryDialogFragmentTest {
         testData tstData = new testData();
         tstData.setupRealPeople();
 
-        activity = Robolectric.setupActivity(MainScoreCardActivity.class);
+        MainScoreCardActivity activity = Robolectric.setupActivity(MainScoreCardActivity.class);
 
-        app = (WondersApp)activity.getApplication();
+        app = (WondersApp) activity.getApplication();
 
         dialogFragment = new MilitaryDialogFragment();
         dialogFragment.show(activity.getFragmentManager(), "");

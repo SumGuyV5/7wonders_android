@@ -7,14 +7,13 @@ import com.richardallenonline.wonders.wonderpack.Stonehenge;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.RobolectricGradleTestRunner;
+import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 /**
  * Created by Laptop on 18/12/2015.
  */
-@RunWith(RobolectricGradleTestRunner.class)
-@Config(constants = BuildConfig.class)
+@RunWith(RobolectricTestRunner.class)
 public class StonehengeTest extends WonderHelper {
     @Test
     public void checkConstructorDefault() throws Exception {

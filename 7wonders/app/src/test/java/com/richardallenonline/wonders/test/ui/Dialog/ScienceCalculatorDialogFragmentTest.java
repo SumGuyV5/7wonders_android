@@ -17,7 +17,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
-import org.robolectric.RobolectricGradleTestRunner;
+import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowAlertDialog;
 
@@ -29,11 +29,8 @@ import static org.robolectric.Shadows.shadowOf;
 /**
  * Created by Laptop on 11/12/2015.
  */
-@RunWith(RobolectricGradleTestRunner.class)
-@Config(constants = BuildConfig.class)
+@RunWith(RobolectricTestRunner.class)
 public class ScienceCalculatorDialogFragmentTest extends testDataScienceCalculatorDialog {
-
-    private PlayerScoreCardActivity activity = null;
 
     private ScienceCalculatorDialogFragment dialogFragment = null;
 
@@ -46,9 +43,9 @@ public class ScienceCalculatorDialogFragmentTest extends testDataScienceCalculat
         testData tstData = new testData();
         tstData.setupRealPeople();
 
-        activity = Robolectric.setupActivity(PlayerScoreCardActivity.class);
+        PlayerScoreCardActivity activity = Robolectric.setupActivity(PlayerScoreCardActivity.class);
 
-        app = (WondersApp)activity.getApplication();
+        app = (WondersApp) activity.getApplication();
 
         dialogFragment = new ScienceCalculatorDialogFragment();
         dialogFragment.show(activity.getFragmentManager(), "");

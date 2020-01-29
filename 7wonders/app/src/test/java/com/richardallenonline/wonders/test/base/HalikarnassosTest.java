@@ -6,14 +6,13 @@ import com.richardallenonline.wonders.base.Halikarnassos;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.RobolectricGradleTestRunner;
+import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 /**
  * Created by Laptop on 18/12/2015.
  */
-@RunWith(RobolectricGradleTestRunner.class)
-@Config(constants = BuildConfig.class)
+@RunWith(RobolectricTestRunner.class)
 public class HalikarnassosTest extends WonderHelper {
     @Test
     public void checkConstructorDefault() throws Exception {

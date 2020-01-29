@@ -16,7 +16,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
-import org.robolectric.RobolectricGradleTestRunner;
+import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowAlertDialog;
 
@@ -29,27 +29,22 @@ import static org.robolectric.Shadows.shadowOf;
 /**
  * Created by Laptop on 07/12/2015.
  */
-@RunWith(RobolectricGradleTestRunner.class)
-@Config(constants = BuildConfig.class)
+@RunWith(RobolectricTestRunner.class)
 public class DeletePlayersDialogFragmentTest {
-
-    private PlayerCountActivity activity = null;
 
     private DeletePlayersDialogFragment dialogFragment = null;
 
     private AlertDialog alert = null;
     private ShadowAlertDialog sAlert = null;
 
-    private WondersApp app = null;
-
     @Before
     public void setup() {
         testData tstData = new testData();
         tstData.setupRealPeople();
 
-        activity = Robolectric.setupActivity(PlayerCountActivity.class);
+        PlayerCountActivity activity = Robolectric.setupActivity(PlayerCountActivity.class);
 
-        app = (WondersApp)activity.getApplication();
+        WondersApp app = (WondersApp) activity.getApplication();
 
         dialogFragment = new DeletePlayersDialogFragment();
         dialogFragment.show(activity.getFragmentManager(), "");

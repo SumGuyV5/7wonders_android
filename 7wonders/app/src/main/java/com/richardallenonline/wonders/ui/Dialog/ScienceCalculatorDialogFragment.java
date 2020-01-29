@@ -23,6 +23,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 public class ScienceCalculatorDialogFragment extends DialogFragment  {
 	private static final int[] textidArray = { R.id.textViewTablet, R.id.textViewGear,
 			R.id.textViewCompass, R.id.textViewWild, R.id.textViewScore };
@@ -181,19 +183,19 @@ public class ScienceCalculatorDialogFragment extends DialogFragment  {
 			TextView text = mainView.findViewById(id);
     		switch (id) {
 	    		case R.id.textViewTablet:
-	    			text.setText(((Integer)score.getTablet()).toString());
+	    			text.setText(String.format(Locale.getDefault(), "%d", (Integer)score.getTablet()));
 	    			break;
 	    		case R.id.textViewGear:
-	    			text.setText(((Integer)score.getGear()).toString());
+	    			text.setText(String.format(Locale.getDefault(), "%d", (Integer)score.getGear()));
 	    			break;
 	    		case R.id.textViewCompass:
-	    			text.setText(((Integer)score.getCompass()).toString());
+	    			text.setText(String.format(Locale.getDefault(), "%d", (Integer)score.getCompass()));
 	    			break;
 	    		case R.id.textViewWild:
-	    			text.setText(((Integer)score.getWild()).toString());
+	    			text.setText(String.format(Locale.getDefault(), "%d", (Integer)score.getWild()));
 	    			break;
 	    		case R.id.textViewScore:
-	    			text.setText(((Integer)score.getScore()).toString());
+	    			text.setText(String.format(Locale.getDefault(), "%d", (Integer)score.getScore()));
 	    			break;
     		}
     	}

@@ -16,7 +16,7 @@ import org.junit.Test;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
-import org.robolectric.RobolectricGradleTestRunner;
+import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowAlertDialog;
 
@@ -26,8 +26,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Created by Richard on 31/08/2015.
  */
-@RunWith(RobolectricGradleTestRunner.class)
-@Config(constants = BuildConfig.class)
+@RunWith(RobolectricTestRunner.class)
 public class MainScoreCardActivityTest {
     private final int[] buttonIdArray = { R.id.buttonPlayer1, R.id.buttonPlayer2,
             R.id.buttonPlayer3, R.id.buttonPlayer4, R.id.buttonPlayer5, R.id.buttonPlayer6,
