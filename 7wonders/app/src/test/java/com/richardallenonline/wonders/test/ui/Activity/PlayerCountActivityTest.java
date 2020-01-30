@@ -95,7 +95,7 @@ public class PlayerCountActivityTest {
         activity.findViewById(R.id.buttonGO).performClick();
 
         Intent expectedIntent = new Intent(activity, MainScoreCardActivity.class);
-        assertThat(shadowOf(activity).getNextStartedActivity()).isEqualTo(expectedIntent);
+        assertThat(shadowOf(activity).getNextStartedActivity().getComponent()).isEqualTo(expectedIntent.getComponent());
     }
 
     @Test

@@ -88,7 +88,7 @@ public class MainScoreCardActivityTest {
             Button btn = activity.findViewById(buttonIdArray[playerNum]);
             try{
                 btn.performClick();
-                assertThat(shadowOf(activity).getNextStartedActivity()).isEqualTo(expectedIntent);
+                assertThat(shadowOf(activity).getNextStartedActivity().getComponent()).isEqualTo(expectedIntent.getComponent());
                 System.out.println(btn.getText() + " - passed");
             }catch(AssertionError e){
                 System.out.println(btn.getText() + " - failed");
