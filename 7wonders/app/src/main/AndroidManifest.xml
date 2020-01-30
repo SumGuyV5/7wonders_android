@@ -23,7 +23,8 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
-        tool:replace="android:label">
+        tool:replace="android:label"
+        android:fullBackupContent="@xml/backup_descriptor">
         <activity
             android:name=".ui.activity.PlayerCountActivity"
             android:label="@string/app_name">

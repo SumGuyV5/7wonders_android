@@ -272,6 +272,7 @@
         android:orientation="horizontal" >
 				
         <Button
+			style="?android:attr/buttonBarButtonStyle"
 	        android:id="@+id/buttonScore"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
@@ -279,6 +280,7 @@
 	        android:text="@string/score" />
 	    
 	    <Button
+			style="?android:attr/buttonBarButtonStyle"
 	        android:id="@+id/buttonScienceHelp"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
@@ -286,6 +288,7 @@
 	        android:text="@string/sciencehelp" />
 	    
 	    <Button
+			style="?android:attr/buttonBarButtonStyle"
 	        android:id="@+id/buttonBack"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"

@@ -97,47 +97,47 @@ public class PlayerScoreCardActivity extends Activity
 					break;
 				case R.id.editTextMilitary:
 					edit = mainView.findViewById(id);
-					edit.setText(((Integer)data.getMilitaryPoints()).toString());
+					edit.setText(String.format("%d", (Integer)data.getMilitaryPoints()));
 					break;
 				case R.id.editTextMoney:
 					edit = mainView.findViewById(id);
-					edit.setText(((Integer)data.getMoneyPoints()).toString());
+					edit.setText(String.format("%d", (Integer)data.getMoneyPoints()));
 					break;
 				case R.id.editTextWonder:
 					edit = mainView.findViewById(id);
-					edit.setText(((Integer)data.getWonderPoints()).toString());
+					edit.setText(String.format("%d", (Integer)data.getWonderPoints()));
 					break;
 				case R.id.editTextCivilian:
 					edit = mainView.findViewById(id);
-					edit.setText(((Integer)data.getCivilianPoints()).toString());
+					edit.setText(String.format("%d", (Integer)data.getCivilianPoints()));
 					break;
 				case R.id.editTextCommercial:
 					edit = mainView.findViewById(id);
-					edit.setText(((Integer)data.getCommercialPoints()).toString());
+					edit.setText(String.format("%d", (Integer)data.getCommercialPoints()));
 					break;
 				case R.id.editTextGuild:
 					edit = mainView.findViewById(id);
-					edit.setText(((Integer)data.getGuildPoints()).toString());
+					edit.setText(String.format("%d", (Integer)data.getGuildPoints()));
 					break;
 				case R.id.editTextScience:
 					edit = mainView.findViewById(id);
-					edit.setText(((Integer)data.getSciencePoints()).toString());
+					edit.setText(String.format("%d", (Integer)data.getSciencePoints()));
 					break;
 				case R.id.editTextLeaders:
 					edit = mainView.findViewById(id);
-					edit.setText(((Integer)data.getLeaderPoints()).toString());
+					edit.setText(String.format("%d", (Integer)data.getLeaderPoints()));
 					break;
 				case R.id.editTextCities:
 					edit = mainView.findViewById(id);
-					edit.setText(((Integer)data.getCityPoints()).toString());
+					edit.setText(String.format("%d", (Integer)data.getCityPoints()));
 					break;
 				case R.id.editTextDebt:
 					edit = mainView.findViewById(id);
-					edit.setText(((Integer)data.getDebtPoints()).toString());
+					edit.setText(String.format("%d", (Integer)data.getDebtPoints()));
 					break;
 				case R.id.textViewTotal:
 					text = mainView.findViewById(id);
-					text.setText(((Integer)data.getFinalScore()).toString());
+					text.setText(String.format("%d", (Integer)data.getFinalScore()));
 					break;
 				}
 				if (edit != null) {
@@ -204,7 +204,7 @@ public class PlayerScoreCardActivity extends Activity
 					break;
 				case R.id.textViewTotal:
 					text = mainView.findViewById(id);
-					text.setText(((Integer)data.getFinalScore()).toString());
+					text.setText(String.format("%d", (Integer)data.getFinalScore()));
 					break;
 				}
 			}				

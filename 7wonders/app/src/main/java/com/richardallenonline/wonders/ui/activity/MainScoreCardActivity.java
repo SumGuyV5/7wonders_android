@@ -114,7 +114,7 @@ public class MainScoreCardActivity extends Activity
 		public void Refresh() {
 			for (int id = 0; id < app.getPlayerCount(); id++) {
 				TextView txt = mainView.findViewById(textidArray[id]);
-				txt.setText(((Integer)app.getPlayerScoreData().get(id).getFinalScore()).toString());
+				txt.setText(String.format("%d", (Integer)app.getPlayerScoreData().get(id).getFinalScore()));
 			}			
 		}
 
