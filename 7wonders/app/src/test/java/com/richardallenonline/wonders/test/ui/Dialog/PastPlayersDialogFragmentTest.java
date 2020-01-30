@@ -3,20 +3,17 @@ package com.richardallenonline.wonders.test.ui.Dialog;
 import android.app.AlertDialog;
 import android.widget.EditText;
 
-import com.richardallenonline.wonders.BuildConfig;
 import com.richardallenonline.wonders.R;
 import com.richardallenonline.wonders.WondersApp;
 import com.richardallenonline.wonders.test.testdata.testData;
-import com.richardallenonline.wonders.ui.Activity.MainScoreCardActivity;
-import com.richardallenonline.wonders.ui.Activity.PlayerCountActivity;
-import com.richardallenonline.wonders.ui.Dialog.PastPlayersDialogFragment;
+import com.richardallenonline.wonders.ui.activity.PlayerCountActivity;
+import com.richardallenonline.wonders.ui.dialog.PastPlayersDialogFragment;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
-import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowAlertDialog;
 
 import static org.assertj.core.api.Assertions.assertThat;

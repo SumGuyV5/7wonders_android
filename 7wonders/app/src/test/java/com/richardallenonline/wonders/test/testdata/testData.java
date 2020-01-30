@@ -3,7 +3,7 @@ package com.richardallenonline.wonders.test.testdata;
 import com.richardallenonline.wonders.WondersApp;
 import com.richardallenonline.wonders.dataset.PlayerScoreDataset;
 import com.richardallenonline.wonders.dataset.PlayersDataset;
-import com.richardallenonline.wonders.ui.Activity.PlayerCountActivity;
+import com.richardallenonline.wonders.ui.activity.PlayerCountActivity;
 
 import org.robolectric.Robolectric;
 

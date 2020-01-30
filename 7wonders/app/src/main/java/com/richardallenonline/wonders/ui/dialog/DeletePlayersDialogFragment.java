@@ -1,4 +1,4 @@
-package com.richardallenonline.wonders.ui.Dialog;
+package com.richardallenonline.wonders.ui.dialog;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -6,12 +6,8 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
-import android.database.SQLException;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.widget.EditText;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import com.richardallenonline.wonders.R;
 import com.richardallenonline.wonders.WondersApp;

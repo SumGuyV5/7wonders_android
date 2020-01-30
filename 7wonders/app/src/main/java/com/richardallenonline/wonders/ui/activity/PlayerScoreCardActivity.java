@@ -1,9 +1,9 @@
-package com.richardallenonline.wonders.ui.Activity;
+package com.richardallenonline.wonders.ui.activity;
 
 import com.richardallenonline.wonders.R;
 import com.richardallenonline.wonders.WondersApp;
 import com.richardallenonline.wonders.dataset.PlayerScoreDataset;
-import com.richardallenonline.wonders.ui.Dialog.ScienceCalculatorDialogFragment;
+import com.richardallenonline.wonders.ui.dialog.ScienceCalculatorDialogFragment;
 
 import android.app.Activity;
 import android.app.Fragment;

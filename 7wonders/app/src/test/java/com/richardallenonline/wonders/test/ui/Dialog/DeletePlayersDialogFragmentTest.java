@@ -1,27 +1,18 @@
 package com.richardallenonline.wonders.test.ui.Dialog;
 
 import android.app.AlertDialog;
-import android.widget.Button;
 
-import com.richardallenonline.wonders.BuildConfig;
-import com.richardallenonline.wonders.R;
 import com.richardallenonline.wonders.WondersApp;
-import com.richardallenonline.wonders.database.SQLDatabase;
-import com.richardallenonline.wonders.dataset.PlayersDataset;
 import com.richardallenonline.wonders.test.testdata.testData;
-import com.richardallenonline.wonders.ui.Activity.PlayerCountActivity;
-import com.richardallenonline.wonders.ui.Dialog.DeletePlayersDialogFragment;
+import com.richardallenonline.wonders.ui.activity.PlayerCountActivity;
+import com.richardallenonline.wonders.ui.dialog.DeletePlayersDialogFragment;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
-import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowAlertDialog;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.robolectric.Shadows.shadowOf;

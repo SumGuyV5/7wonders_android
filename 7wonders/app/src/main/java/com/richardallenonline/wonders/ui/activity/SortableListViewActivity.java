@@ -1,4 +1,4 @@
-package com.richardallenonline.wonders.ui.Activity;
+package com.richardallenonline.wonders.ui.activity;
 
 import java.util.ArrayList;
 import java.util.Arrays;

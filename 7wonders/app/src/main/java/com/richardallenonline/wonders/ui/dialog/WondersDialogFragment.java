@@ -1,4 +1,4 @@
-package com.richardallenonline.wonders.ui.Dialog;
+package com.richardallenonline.wonders.ui.dialog;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -8,9 +8,6 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.ImageView;
 
 import com.richardallenonline.wonders.R;
 import com.richardallenonline.wonders.WondersApp;

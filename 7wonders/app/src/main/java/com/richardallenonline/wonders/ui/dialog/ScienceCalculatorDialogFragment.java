@@ -1,4 +1,4 @@
-package com.richardallenonline.wonders.ui.Dialog;
+package com.richardallenonline.wonders.ui.dialog;
 
 import kankan.wheel.widget.WheelView;
 import kankan.wheel.widget.adapters.NumericWheelAdapter;
@@ -12,7 +12,6 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.os.Bundle;
-import android.app.Fragment;
 import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;

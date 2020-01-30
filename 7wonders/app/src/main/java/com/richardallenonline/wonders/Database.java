@@ -8,10 +8,8 @@ import com.richardallenonline.wonders.dataset.Dataset;
 import com.richardallenonline.wonders.dataset.GamesDataset;
 import com.richardallenonline.wonders.dataset.PlayersDataset;
 import com.richardallenonline.wonders.dataset.PlaysDataset;
-import com.richardallenonline.wonders.ui.Activity.PlayerScoreCardActivity;
 
 import android.content.Context;
-import android.database.SQLException;
 
 public class Database {
 	private List<GamesDataset> gamesDatasetList = new ArrayList<>();

@@ -25,7 +25,7 @@
         android:theme="@style/AppTheme"
         tool:replace="android:label">
         <activity
-            android:name=".ui.Activity.PlayerCountActivity"
+            android:name=".ui.activity.PlayerCountActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,27 +34,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.Activity.MainScoreCardActivity"
+            android:name=".ui.activity.MainScoreCardActivity"
             android:label="@string/app_name"
-            android:parentActivityName=".ui.Activity.PlayerCountActivity">
+            android:parentActivityName=".ui.activity.PlayerCountActivity">
 
             <!-- Parent activity meta-data to support API level 7+ -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.Activity.PlayerCountActivity" />
+                android:value=".ui.activity.PlayerCountActivity" />
         </activity>
         <activity
-            android:name=".ui.Activity.PlayerScoreCardActivity"
+            android:name=".ui.activity.PlayerScoreCardActivity"
             android:label="@string/app_name"
-            android:parentActivityName=".ui.Activity.MainScoreCardActivity">
+            android:parentActivityName=".ui.activity.MainScoreCardActivity">
 
             <!-- Parent activity meta-data to support API level 7+ -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.Activity.MainScoreCardActivity" />
+                android:value=".ui.activity.MainScoreCardActivity" />
         </activity>
         <activity
-            android:name=".ui.Activity.SortableListViewActivity"
+            android:name=".ui.activity.SortableListViewActivity"
             android:label="@string/title_activity_sortable_list_view" />
     </application>
 

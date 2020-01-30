@@ -1,9 +1,8 @@
-package com.richardallenonline.wonders.ui.Dialog;
+package com.richardallenonline.wonders.ui.dialog;
 
 import com.richardallenonline.wonders.R;
 import com.richardallenonline.wonders.WondersApp;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;

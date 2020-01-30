@@ -1,9 +1,8 @@
 package com.richardallenonline.wonders.test.ui.Activity;
 
-import com.richardallenonline.wonders.BuildConfig;
 import com.richardallenonline.wonders.WondersApp;
-import com.richardallenonline.wonders.ui.Activity.PlayerCountActivity;
-import com.richardallenonline.wonders.ui.Activity.MainScoreCardActivity;
+import com.richardallenonline.wonders.ui.activity.PlayerCountActivity;
+import com.richardallenonline.wonders.ui.activity.MainScoreCardActivity;
 import com.richardallenonline.wonders.R;
 
 import android.content.Intent;

@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:gravity="center"
-    tools:context="com.richardallenonline.wonders.ui.Activity.PlayerScoreCardActivity$PlaceholderFragment" >
+    tools:context="com.richardallenonline.wonders.ui.activity.PlayerScoreCardActivity$PlaceholderFragment" >
 
     <GridLayout
         android:layout_width="match_parent"

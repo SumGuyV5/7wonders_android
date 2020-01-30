@@ -1,11 +1,11 @@
-package com.richardallenonline.wonders.ui.Activity;
+package com.richardallenonline.wonders.ui.activity;
 
 import com.richardallenonline.wonders.R;
 import com.richardallenonline.wonders.WondersApp;
 import com.richardallenonline.wonders.dataset.PlayersDataset;
 import com.richardallenonline.wonders.dataset.PlayerScoreDataset;
-import com.richardallenonline.wonders.ui.Dialog.MilitaryDialogFragment;
-import com.richardallenonline.wonders.ui.Dialog.WondersDialogFragment;
+import com.richardallenonline.wonders.ui.dialog.MilitaryDialogFragment;
+import com.richardallenonline.wonders.ui.dialog.WondersDialogFragment;
 
 import android.app.Activity;
 import android.app.Fragment;

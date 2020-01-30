@@ -5,20 +5,18 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.richardallenonline.wonders.BuildConfig;
 import com.richardallenonline.wonders.R;
 import com.richardallenonline.wonders.WondersApp;
 import com.richardallenonline.wonders.test.testdata.testData;
 import com.richardallenonline.wonders.test.testdata.testDataScienceCalculatorDialog;
-import com.richardallenonline.wonders.ui.Activity.PlayerScoreCardActivity;
-import com.richardallenonline.wonders.ui.Dialog.ScienceCalculatorDialogFragment;
+import com.richardallenonline.wonders.ui.activity.PlayerScoreCardActivity;
+import com.richardallenonline.wonders.ui.dialog.ScienceCalculatorDialogFragment;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
-import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowAlertDialog;
 
 import kankan.wheel.widget.WheelView;

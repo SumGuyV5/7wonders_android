@@ -2,19 +2,17 @@ package com.richardallenonline.wonders.test.ui.Dialog;
 
 import android.app.AlertDialog;
 
-import com.richardallenonline.wonders.BuildConfig;
 import com.richardallenonline.wonders.R;
 import com.richardallenonline.wonders.WondersApp;
 import com.richardallenonline.wonders.test.testdata.testData;
-import com.richardallenonline.wonders.ui.Activity.MainScoreCardActivity;
-import com.richardallenonline.wonders.ui.Dialog.MilitaryDialogFragment;
+import com.richardallenonline.wonders.ui.activity.MainScoreCardActivity;
+import com.richardallenonline.wonders.ui.dialog.MilitaryDialogFragment;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
-import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowAlertDialog;
 
 import static org.assertj.core.api.Assertions.assertThat;

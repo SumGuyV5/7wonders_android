@@ -1,9 +1,9 @@
-package com.richardallenonline.wonders.ui.Activity;
+package com.richardallenonline.wonders.ui.activity;
 
 import com.richardallenonline.wonders.R;
 import com.richardallenonline.wonders.WondersApp;
-import com.richardallenonline.wonders.ui.Dialog.PastPlayersDialogFragment;
-import com.richardallenonline.wonders.ui.Dialog.DeletePlayersDialogFragment;
+import com.richardallenonline.wonders.ui.dialog.PastPlayersDialogFragment;
+import com.richardallenonline.wonders.ui.dialog.DeletePlayersDialogFragment;
 
 import android.app.Activity;
 import android.app.Fragment;

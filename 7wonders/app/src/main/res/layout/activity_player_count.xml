@@ -3,6 +3,6 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.richardallenonline.wonders.ui.Activity.PlayerCountActivity"
+    tools:context="com.richardallenonline.wonders.ui.activity.PlayerCountActivity"
     tools:ignore="MergeRootFrame" />
 

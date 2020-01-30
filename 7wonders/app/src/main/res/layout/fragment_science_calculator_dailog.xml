@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"    
     android:orientation="vertical"
-    tools:context="com.richardallenonline.wonders.ui.Dialog.ScienceCalculatorDialogFragment" >
+    tools:context="com.richardallenonline.wonders.ui.dialog.ScienceCalculatorDialogFragment" >
 
 	<LinearLayout
 		style="@style/AppLayout"

@@ -1,18 +1,15 @@
 package com.richardallenonline.wonders.test;
 
-import com.richardallenonline.wonders.BuildConfig;
 import com.richardallenonline.wonders.Database;
-import com.richardallenonline.wonders.ScienceCalculator;
 import com.richardallenonline.wonders.WondersApp;
 import com.richardallenonline.wonders.dataset.GamesDataset;
-import com.richardallenonline.wonders.ui.Activity.PlayerCountActivity;
+import com.richardallenonline.wonders.ui.activity.PlayerCountActivity;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
-import org.robolectric.annotation.Config;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

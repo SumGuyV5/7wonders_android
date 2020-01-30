@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:gravity="center"
-    tools:context="com.richardallenonline.wonders.ui.Activity.MainScoreCardActivity$PlaceholderFragment" >
+    tools:context="com.richardallenonline.wonders.ui.activity.MainScoreCardActivity$PlaceholderFragment" >
 
     <LinearLayout
         style="@style/AppLayout"

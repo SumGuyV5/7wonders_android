@@ -5,19 +5,17 @@ import android.content.Intent;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.richardallenonline.wonders.BuildConfig;
 import com.richardallenonline.wonders.R;
 import com.richardallenonline.wonders.WondersApp;
-import com.richardallenonline.wonders.ui.Activity.PlayerCountActivity;
-import com.richardallenonline.wonders.ui.Activity.MainScoreCardActivity;
-import com.richardallenonline.wonders.ui.Activity.PlayerScoreCardActivity;
+import com.richardallenonline.wonders.ui.activity.PlayerCountActivity;
+import com.richardallenonline.wonders.ui.activity.MainScoreCardActivity;
+import com.richardallenonline.wonders.ui.activity.PlayerScoreCardActivity;
 
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
-import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowAlertDialog;
 
 import static org.robolectric.Shadows.shadowOf;
