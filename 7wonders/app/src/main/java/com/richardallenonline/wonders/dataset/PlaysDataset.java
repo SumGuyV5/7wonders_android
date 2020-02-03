@@ -2,6 +2,7 @@ package com.richardallenonline.wonders.dataset;
 
 import android.content.ContentValues;
 import android.database.Cursor;
+import android.support.annotation.NonNull;
 
 import com.richardallenonline.wonders.EqualsBy;
 import com.richardallenonline.wonders.base.Wonder;
@@ -118,7 +119,7 @@ public class PlaysDataset extends Dataset {
 	}
 
 	@Override
-	public int compareTo(Object another) {
+	public int compareTo(@NonNull Object another) {
 		return (int)(this.id - ((PlaysDataset)another).getId());
 	}
 

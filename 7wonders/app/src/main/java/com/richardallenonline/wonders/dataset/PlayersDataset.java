@@ -5,8 +5,7 @@ import com.richardallenonline.wonders.database.SQLDatabase.PLAYER;
 
 import android.content.ContentValues;
 import android.database.Cursor;
-
-import java.io.Serializable;
+import android.support.annotation.NonNull;
 
 public class PlayersDataset extends Dataset {
 	  private long id;
@@ -34,7 +33,7 @@ public class PlayersDataset extends Dataset {
 	}
 
 	  @Override
-	  public int compareTo(Object another) {
+	  public int compareTo(@NonNull Object another) {
 		  return (int)(this.id - ((PlayersDataset)another).getId());
 	  }
 
@@ -46,7 +45,7 @@ public class PlayersDataset extends Dataset {
 			  return false;
 		  final PlayersDataset other = (PlayersDataset)obj;
 
-		  boolean rtn = false;
+		  boolean rtn;
 		  switch (EqualsBy.getId(super.getEqualsBy().getValue() | other.getEqualsBy().getValue())) {
 			  default:
 			  case ID:
@@ -100,6 +99,7 @@ public class PlayersDataset extends Dataset {
 	  }
 
 	  // Will be used by the ArrayAdapter in the ListView
+	  @NonNull
 	  @Override
 	  public String toString() {
 		  return name;

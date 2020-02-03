@@ -1,4 +1,4 @@
-package com.richardallenonline.wonders.test.ui.Dialog;
+package com.richardallenonline.wonders.test.ui.dialog;
 
 import android.app.AlertDialog;
 import android.widget.EditText;

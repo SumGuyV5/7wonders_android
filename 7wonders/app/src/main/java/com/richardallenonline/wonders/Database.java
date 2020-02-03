@@ -16,9 +16,9 @@ public class Database {
 	private List<PlayersDataset> playersDatasetList = new ArrayList<>();
 	private List<PlaysDataset> playsDatasetList = new ArrayList<>();
 	
-	private DataSource<GamesDataset> gamesDataSource = null;
-	private DataSource<PlayersDataset> playersDataSource = null;
-	private DataSource<PlaysDataset> playsDataSource = null;
+	private DataSource<GamesDataset> gamesDataSource;
+	private DataSource<PlayersDataset> playersDataSource;
+	private DataSource<PlaysDataset> playsDataSource;
 
 	private boolean databaseLoaded = false;
 	
@@ -70,7 +70,7 @@ public class Database {
 			source = playsDataSource;
 		}
 
-		T tmp = null;
+		T tmp;
 		int idx = list.indexOf(value);
 		if (idx == -1) {
 			tmp = AddToDataBase(value, source);
@@ -78,7 +78,7 @@ public class Database {
 		} else {
 			tmp = (T)list.get(idx);
 			tmp.setEqualsBy(EqualsBy.EveryThing);
-			if (tmp.equals(value) == false) {
+			if (!tmp.equals(value)) {
 				UpdateDataBase(value, source);
 				tmp = (T)list.set(idx, value);
 			}

@@ -11,7 +11,7 @@ import org.robolectric.Robolectric;
  * Created by Laptop on 26/11/2015.
  */
 public class testData {
-    private WondersApp app = null;
+    private WondersApp app;
 
     public testData() {
         app = (WondersApp)Robolectric.setupActivity(PlayerCountActivity.class).getApplication();

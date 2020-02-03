@@ -109,7 +109,7 @@ public class WheelRecycle {
 	 */
 	private List<View> addView(View view, List<View> cache) {
 		if (cache == null) {
-			cache = new LinkedList<View>();
+			cache = new LinkedList<>();
 		}
 		
 		cache.add(view);
@@ -131,7 +131,6 @@ public class WheelRecycle {
 			while (index < 0) {
 				index = count + index;
 			}
-			index %= count;
 			items = addView(view, items);
 		}
 	}

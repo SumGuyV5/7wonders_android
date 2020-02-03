@@ -1,4 +1,4 @@
-package com.richardallenonline.wonders.test.ui.Activity;
+package com.richardallenonline.wonders.test.ui.activity;
 
 import com.richardallenonline.wonders.WondersApp;
 import com.richardallenonline.wonders.ui.activity.PlayerCountActivity;

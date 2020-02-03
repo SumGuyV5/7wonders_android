@@ -69,7 +69,7 @@ public class TouchInterceptor extends ListView {
     private static final int FLING = 0;
     private static final int SLIDE = 1;
     private static final int TRASH = 2;
-    private int mRemoveMode = -1;
+    private int mRemoveMode;
     private Rect mTempRect = new Rect();
     private Bitmap mDragBitmap;
     private final int mTouchSlop;

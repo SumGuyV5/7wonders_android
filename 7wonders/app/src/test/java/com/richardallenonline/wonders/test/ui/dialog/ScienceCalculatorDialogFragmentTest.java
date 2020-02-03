@@ -1,4 +1,4 @@
-package com.richardallenonline.wonders.test.ui.Dialog;
+package com.richardallenonline.wonders.test.ui.dialog;
 
 import android.app.AlertDialog;
 import android.view.View;
@@ -60,7 +60,7 @@ public class ScienceCalculatorDialogFragmentTest extends testDataScienceCalculat
     @Test
     public void clickingGoButton_() throws Exception {
         WheelView wheel = null;
-        TextView text = null;
+        TextView text;
 
         setupRandoData();
 
@@ -91,8 +91,8 @@ public class ScienceCalculatorDialogFragmentTest extends testDataScienceCalculat
 
     @Test
     public void clickingResetButton_() throws Exception {
-        WheelView wheel = null;
-        TextView text = null;
+        WheelView wheel;
+        TextView text;
 
         setupRandoData();
 

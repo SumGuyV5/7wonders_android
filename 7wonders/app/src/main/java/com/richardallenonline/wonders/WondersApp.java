@@ -2,7 +2,6 @@ package com.richardallenonline.wonders;
 
 import android.app.Application;
 import android.content.Context;
-import android.os.Bundle;
 
 import com.richardallenonline.wonders.dataset.PlayerScoreDataset;
 import com.richardallenonline.wonders.dataset.PlayersDataset;

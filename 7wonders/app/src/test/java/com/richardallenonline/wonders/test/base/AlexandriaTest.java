@@ -1,17 +1,10 @@
 package com.richardallenonline.wonders.test.base;
 
 import com.richardallenonline.wonders.base.Alexandria;
-import com.richardallenonline.wonders.BuildConfig;
 
 import org.junit.Test;
-import org.junit.Before;
 import org.junit.runner.RunWith;
-import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
-import org.robolectric.annotation.Config;
-
-import static org.robolectric.Shadows.shadowOf;
-import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Created by Richard on 05/09/2015.

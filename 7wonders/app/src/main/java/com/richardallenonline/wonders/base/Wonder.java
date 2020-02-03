@@ -64,11 +64,8 @@ public class Wonder {
 		return rtn;
 	}
 	
-	protected void getStages2( int one, int two, int three, int four ) {
-		one = stagePart1;
-		two = stagePart2;
-		three = stagePart3;
-		four = stagePart4;
+	protected int[] getStages2() {
+		return new int[] { stagePart1, stagePart2, stagePart3, stagePart4 };
 	}
 
 	public static final class Side {

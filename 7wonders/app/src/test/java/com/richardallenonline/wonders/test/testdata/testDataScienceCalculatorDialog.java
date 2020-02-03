@@ -10,8 +10,6 @@ import java.util.Random;
 
 import kankan.wheel.widget.WheelView;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 /**
  * Created by Laptop on 11/12/2015.
  */

@@ -68,7 +68,7 @@ public class DataSource<T extends Dataset> {
 		Cursor cursor = database.query(TABLE_NAME, allColumns, COLUMN_ID + " = " + insertId, null,
 				null, null, null);
 		T rtn = null;
-		if ((isCursorEmptyOrNotPrepared(cursor) == false) && (cursor.moveToFirst())) {
+		if ((!isCursorEmptyOrNotPrepared(cursor)) && (cursor.moveToFirst())) {
 			rtn = generateDatasetFromCursor(cursor);
 			cursor.close();
 		}
@@ -82,11 +82,11 @@ public class DataSource<T extends Dataset> {
 	}
 
 	public List<T> getAll() {
-		List<T> rtn = new ArrayList<T>();
+		List<T> rtn = new ArrayList<>();
 
 		Cursor cursor = database.query(TABLE_NAME, allColumns, null, null, null, null, null);
 
-		if ((isCursorEmptyOrNotPrepared(cursor) == false) && (cursor.moveToFirst())) {
+		if ((!isCursorEmptyOrNotPrepared(cursor)) && (cursor.moveToFirst())) {
 			while (!cursor.isAfterLast()) {
 				rtn.add(generateDatasetFromCursor(cursor));
 				cursor.moveToNext();
@@ -102,7 +102,7 @@ public class DataSource<T extends Dataset> {
 		T rtn = null;
 		Cursor cursor = database.query(TABLE_NAME, allColumns, null, null, null, null, null);
 
-		if ((isCursorEmptyOrNotPrepared(cursor) == false) && (cursor.moveToFirst())) {
+		if ((!isCursorEmptyOrNotPrepared(cursor)) && (cursor.moveToFirst())) {
 			rtn = generateDatasetFromCursor(cursor);
 			// make sure to close the cursor
 			cursor.close();
@@ -115,10 +115,7 @@ public class DataSource<T extends Dataset> {
 		try {
 			rtn = type.newInstance();
 			rtn.SetData(cursor);
-		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
+		} catch (InstantiationException | IllegalAccessException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

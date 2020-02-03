@@ -87,7 +87,7 @@ public class PlayerScoreCardActivity extends Activity
 		
 		private void Setup() {
 			PlayerScoreDataset data = app.getPlayerScoreData().get(playerNum);
-			TextView text = null;
+			TextView text;
 			EditText edit = null;
 			for (int id: textidArray) {
 				switch(id) {
@@ -156,8 +156,8 @@ public class PlayerScoreCardActivity extends Activity
 		
 		private void UpdateData() {
 			PlayerScoreDataset data = app.getPlayerScoreData().get(playerNum);
-			TextView text = null;
-			EditText edit = null;
+			TextView text;
+			EditText edit;
 			for (int id: textidArray) {
 				switch(id) {
 				case R.id.textViewPlayerName:

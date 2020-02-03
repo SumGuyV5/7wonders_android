@@ -19,8 +19,8 @@ import java.util.List;
 public class DeletePlayersDialogFragment extends DialogFragment {
     private WondersApp app = null;
 
-    private List<PlayersDataset> pastPlayers = new ArrayList<PlayersDataset>();
-    private List<PlayersDataset> deletePlayers = new ArrayList<PlayersDataset>();
+    private List<PlayersDataset> pastPlayers = new ArrayList<>();
+    private List<PlayersDataset> deletePlayers = new ArrayList<>();
 
     /* The activity that creates an instance of this dialog fragment must
      * implement this interface in order to receive event callbacks.
@@ -28,9 +28,6 @@ public class DeletePlayersDialogFragment extends DialogFragment {
     public interface DeletePlayersDialogListener {
         void onDialogClose(int which);
     }
-
-    // Use this instance of the interface to deliver action events
-    private DeletePlayersDialogListener mListener = null;
 
     @SuppressLint("InflateParams")
     @Override
@@ -47,7 +44,7 @@ public class DeletePlayersDialogFragment extends DialogFragment {
                 .setNegativeButton(R.string.cancel, deletePlayersButtonClickListener());
 
 
-        final List<String> descriptions = new ArrayList<String>();
+        final List<String> descriptions = new ArrayList<>();
 
         pastPlayers.addAll(app.db().getPlayers());
         for (PlayersDataset name :pastPlayers)
@@ -75,7 +72,8 @@ public class DeletePlayersDialogFragment extends DialogFragment {
         // Verify that the host activity implements the callback interface
         try {
             // Instantiate the NoticeDialogListener so we can send events to the host
-            mListener = (DeletePlayersDialogListener) activity;
+            // Use this instance of the interface to deliver action events
+            DeletePlayersDialogListener mListener = (DeletePlayersDialogListener) activity;
         } catch (ClassCastException e) {
             // The activity doesn't implement the interface, throw exception
             throw new ClassCastException(activity.toString()

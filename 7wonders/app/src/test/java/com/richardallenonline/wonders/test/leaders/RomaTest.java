@@ -1,14 +1,11 @@
 package com.richardallenonline.wonders.test.leaders;
 
-import com.richardallenonline.wonders.BuildConfig;
-import com.richardallenonline.wonders.cities.Petra;
 import com.richardallenonline.wonders.leaders.Roma;
 import com.richardallenonline.wonders.test.base.WonderHelper;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
-import org.robolectric.annotation.Config;
 
 /**
  * Created by Laptop on 18/12/2015.

@@ -66,12 +66,6 @@ public class PlayerCountActivity extends Activity
 	    super.onResume();
 	}
 
-	@Override
-	protected void onPause() {
-	    //datasource.close();
-	    super.onPause();
-	}
-
 	/**
 	 * A placeholder fragment containing a simple view.
 	 */

@@ -33,8 +33,6 @@ public class SortableListViewActivity extends ListActivity {
 		
 			//Assuming that item is moved up the list
 			int direction = -1;
-			int loop_start = from;
-			int loop_end = to;
 			//For instance where the item is dragged down the list
 		
 			if(from < to) {
@@ -43,7 +41,7 @@ public class SortableListViewActivity extends ListActivity {
 		
 			Object target = sArray[from];		
 		
-			for(int i = loop_start; i != loop_end; i = i + direction){
+			for(int i = from; i != to; i = i + direction){
 				sArray[i] = sArray[i + direction];
 			}		
 		
@@ -67,7 +65,7 @@ public class SortableListViewActivity extends ListActivity {
 		
 		sArray = playerNames.toArray();
 
-		ArrayAdapter<Object> adp = new ArrayAdapter<Object>(this, R.layout.listrow, sArray);
+		ArrayAdapter<Object> adp = new ArrayAdapter<>(this, R.layout.listrow, sArray);
 		setListAdapter(adp);
 		
 		mList = (TouchInterceptor) getListView();
@@ -84,7 +82,7 @@ public class SortableListViewActivity extends ListActivity {
 	}
 	
 	public void closeClick(View view) {
-		List<String> data = new ArrayList<String>();
+		List<String> data = new ArrayList<>();
 		for (Object ojt: sArray)
 			data.add((String)ojt);
 		((WondersApp)getApplication()).Reorder(data);

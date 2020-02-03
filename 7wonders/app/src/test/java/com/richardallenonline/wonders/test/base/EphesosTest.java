@@ -1,12 +1,10 @@
 package com.richardallenonline.wonders.test.base;
 
-import com.richardallenonline.wonders.BuildConfig;
 import com.richardallenonline.wonders.base.Ephesos;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
-import org.robolectric.annotation.Config;
 
 /**
  * Created by Laptop on 18/12/2015.

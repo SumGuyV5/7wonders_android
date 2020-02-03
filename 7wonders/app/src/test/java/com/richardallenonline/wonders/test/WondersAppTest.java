@@ -1,13 +1,11 @@
 package com.richardallenonline.wonders.test;
 
-import com.richardallenonline.wonders.BuildConfig;
 import com.richardallenonline.wonders.WondersApp;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
-import org.robolectric.annotation.Config;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
