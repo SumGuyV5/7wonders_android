@@ -601,6 +601,17 @@ public class WheelView extends View {
 	}
 
 	@Override
+	public boolean performClick() {
+		// Calls the super implementation, which generates an AccessibilityEvent
+		// and calls the onClick() listener on the view, if any
+		super.performClick();
+
+		// Handle the action for the custom click here
+
+		return true;
+	}
+
+	@Override
 	public boolean onTouchEvent(MotionEvent event) {
 		if (!isEnabled() || getViewAdapter() == null) {
 			return true;
@@ -628,7 +639,7 @@ public class WheelView extends View {
 		        }
 		        break;
 		}
-
+		performClick();
 		return scroller.onTouchEvent(event);
 	}
 	

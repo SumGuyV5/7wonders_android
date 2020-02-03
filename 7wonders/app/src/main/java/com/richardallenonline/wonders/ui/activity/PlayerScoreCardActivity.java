@@ -18,8 +18,8 @@ import android.widget.TextView;
 
 public class PlayerScoreCardActivity extends Activity
 	implements ScienceCalculatorDialogFragment.ScienceCalculatorDialogListener {
-			
-	@Override
+
+    @Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_player_score_card);
@@ -97,47 +97,47 @@ public class PlayerScoreCardActivity extends Activity
 					break;
 				case R.id.editTextMilitary:
 					edit = mainView.findViewById(id);
-					edit.setText(String.format("%d", (Integer)data.getMilitaryPoints()));
+					edit.setText(String.format(app.getLocale(), "%d", (Integer)data.getMilitaryPoints()));
 					break;
 				case R.id.editTextMoney:
 					edit = mainView.findViewById(id);
-					edit.setText(String.format("%d", (Integer)data.getMoneyPoints()));
+					edit.setText(String.format(app.getLocale(), "%d", (Integer)data.getMoneyPoints()));
 					break;
 				case R.id.editTextWonder:
 					edit = mainView.findViewById(id);
-					edit.setText(String.format("%d", (Integer)data.getWonderPoints()));
+					edit.setText(String.format(app.getLocale(), "%d", (Integer)data.getWonderPoints()));
 					break;
 				case R.id.editTextCivilian:
 					edit = mainView.findViewById(id);
-					edit.setText(String.format("%d", (Integer)data.getCivilianPoints()));
+					edit.setText(String.format(app.getLocale(), "%d", (Integer)data.getCivilianPoints()));
 					break;
 				case R.id.editTextCommercial:
 					edit = mainView.findViewById(id);
-					edit.setText(String.format("%d", (Integer)data.getCommercialPoints()));
+					edit.setText(String.format(app.getLocale(), "%d", (Integer)data.getCommercialPoints()));
 					break;
 				case R.id.editTextGuild:
 					edit = mainView.findViewById(id);
-					edit.setText(String.format("%d", (Integer)data.getGuildPoints()));
+					edit.setText(String.format(app.getLocale(), "%d", (Integer)data.getGuildPoints()));
 					break;
 				case R.id.editTextScience:
 					edit = mainView.findViewById(id);
-					edit.setText(String.format("%d", (Integer)data.getSciencePoints()));
+					edit.setText(String.format(app.getLocale(), "%d", (Integer)data.getSciencePoints()));
 					break;
 				case R.id.editTextLeaders:
 					edit = mainView.findViewById(id);
-					edit.setText(String.format("%d", (Integer)data.getLeaderPoints()));
+					edit.setText(String.format(app.getLocale(), "%d", (Integer)data.getLeaderPoints()));
 					break;
 				case R.id.editTextCities:
 					edit = mainView.findViewById(id);
-					edit.setText(String.format("%d", (Integer)data.getCityPoints()));
+					edit.setText(String.format(app.getLocale(), "%d", (Integer)data.getCityPoints()));
 					break;
 				case R.id.editTextDebt:
 					edit = mainView.findViewById(id);
-					edit.setText(String.format("%d", (Integer)data.getDebtPoints()));
+					edit.setText(String.format(app.getLocale(), "%d", (Integer)data.getDebtPoints()));
 					break;
 				case R.id.textViewTotal:
 					text = mainView.findViewById(id);
-					text.setText(String.format("%d", (Integer)data.getFinalScore()));
+					text.setText(String.format(app.getLocale(), "%d", (Integer)data.getFinalScore()));
 					break;
 				}
 				if (edit != null) {
@@ -204,7 +204,7 @@ public class PlayerScoreCardActivity extends Activity
 					break;
 				case R.id.textViewTotal:
 					text = mainView.findViewById(id);
-					text.setText(String.format("%d", (Integer)data.getFinalScore()));
+					text.setText(String.format(app.getLocale(), "%d", (Integer)data.getFinalScore()));
 					break;
 				}
 			}				

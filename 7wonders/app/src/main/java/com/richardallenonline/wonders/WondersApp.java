@@ -9,6 +9,7 @@ import com.richardallenonline.wonders.dataset.PlayersDataset;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by Richard on 01/09/2015.
@@ -18,6 +19,8 @@ public class WondersApp extends Application {
 
     private List<PlayerScoreDataset> playerScoreData = new ArrayList<>();
     private List<PlayersDataset> playersData = new ArrayList<>();
+
+    private Locale locale = null;
 
     private int playerCount = 2;
 
@@ -33,6 +36,7 @@ public class WondersApp extends Application {
 
     private synchronized void Setup(Context con) {
         dataBase = new Database(con);
+        locale = getResources().getConfiguration().locale;
     }
 
     public List<String> getNames() {
@@ -108,6 +112,8 @@ public class WondersApp extends Application {
     public int getPlayersDataSize() {
         return playersData.size();
     }
+
+    public Locale getLocale() { return locale; }
 
     public void PlayersDataAdd(PlayersDataset value) {
         playersData.add(value);

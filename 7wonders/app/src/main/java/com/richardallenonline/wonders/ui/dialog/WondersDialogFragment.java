@@ -37,7 +37,7 @@ public class WondersDialogFragment extends DialogFragment  {
         
         LayoutInflater inflater = getActivity().getLayoutInflater();
         
-        mainView = inflater.inflate(R.layout.fragment_wonders_dailog, null);
+        mainView = inflater.inflate(R.layout.fragment_wonders_dailog, null, false);
         
         builder.setView(mainView);
         builder.setTitle(R.string.wonder)

@@ -22,7 +22,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.util.Locale;
 
 public class ScienceCalculatorDialogFragment extends DialogFragment  {
 	private static final int[] textidArray = { R.id.textViewTablet, R.id.textViewGear,
@@ -61,7 +60,7 @@ public class ScienceCalculatorDialogFragment extends DialogFragment  {
 
 		LayoutInflater inflater = getActivity().getLayoutInflater();
 
-		mainView = inflater.inflate(R.layout.fragment_science_calculator_dailog, null);
+		mainView = inflater.inflate(R.layout.fragment_science_calculator_dailog, null, false);
 
         builder.setView(mainView);
         builder.setTitle(R.string.science_calculator_dailog)
@@ -182,19 +181,19 @@ public class ScienceCalculatorDialogFragment extends DialogFragment  {
 			TextView text = mainView.findViewById(id);
     		switch (id) {
 	    		case R.id.textViewTablet:
-	    			text.setText(String.format(Locale.getDefault(), "%d", (Integer)score.getTablet()));
+	    			text.setText(String.format(app.getLocale(), "%d", (Integer)score.getTablet()));
 	    			break;
 	    		case R.id.textViewGear:
-	    			text.setText(String.format(Locale.getDefault(), "%d", (Integer)score.getGear()));
+	    			text.setText(String.format(app.getLocale(), "%d", (Integer)score.getGear()));
 	    			break;
 	    		case R.id.textViewCompass:
-	    			text.setText(String.format(Locale.getDefault(), "%d", (Integer)score.getCompass()));
+	    			text.setText(String.format(app.getLocale(), "%d", (Integer)score.getCompass()));
 	    			break;
 	    		case R.id.textViewWild:
-	    			text.setText(String.format(Locale.getDefault(), "%d", (Integer)score.getWild()));
+	    			text.setText(String.format(app.getLocale(), "%d", (Integer)score.getWild()));
 	    			break;
 	    		case R.id.textViewScore:
-	    			text.setText(String.format(Locale.getDefault(), "%d", (Integer)score.getScore()));
+	    			text.setText(String.format(app.getLocale(), "%d", (Integer)score.getScore()));
 	    			break;
     		}
     	}
