@@ -2,7 +2,7 @@ package com.richardallenonline.wonders.dataset;
 
 import android.content.ContentValues;
 import android.database.Cursor;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.richardallenonline.wonders.EqualsBy;
 import com.richardallenonline.wonders.database.SQLDatabase.GAMES;

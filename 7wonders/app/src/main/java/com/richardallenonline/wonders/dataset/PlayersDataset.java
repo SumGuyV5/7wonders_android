@@ -5,7 +5,7 @@ import com.richardallenonline.wonders.database.SQLDatabase.PLAYER;
 
 import android.content.ContentValues;
 import android.database.Cursor;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 public class PlayersDataset extends Dataset {
 	  private long id;

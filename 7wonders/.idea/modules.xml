@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/7wonders.iml" filepath="$PROJECT_DIR$/7wonders.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/7wonders-app.iml" filepath="$PROJECT_DIR$/app/7wonders-app.iml" group="7wonders/app" />
+      <module fileurl="file://$PROJECT_DIR$/wheel/7wonders-wheel.iml" filepath="$PROJECT_DIR$/wheel/7wonders-wheel.iml" group="7wonders/wheel" />
+      <module fileurl="file://$PROJECT_DIR$/7wonders_android-7wonders.iml" filepath="$PROJECT_DIR$/7wonders_android-7wonders.iml" group="7wonders" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/wheel/wheel.iml" filepath="$PROJECT_DIR$/wheel/wheel.iml" />
     </modules>
