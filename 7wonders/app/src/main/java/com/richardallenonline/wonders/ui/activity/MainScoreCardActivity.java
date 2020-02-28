@@ -23,7 +23,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainScoreCardActivity extends Activity
-	implements MilitaryDialogFragment.MilitaryDialogListener {
+	implements MilitaryDialogFragment.MilitaryDialogListener, WondersDialogFragment.WondersDialogListener {
 	PlaceholderFragment fragment = null;
 
 	private final int[] buttonsidArray = {R.id.buttonPlayer1, R.id.buttonPlayer2,
@@ -98,6 +98,9 @@ public class MainScoreCardActivity extends Activity
 								 Bundle savedInstanceState) {
 			mainView = inflater.inflate(R.layout.fragment_score_card, container, false);
 
+            //Wonder fragment no functional yet. Lets disable it for release.
+            mainView.findViewById(R.id.buttonWonders).setVisibility(View.INVISIBLE);
+
 			app = (WondersApp)getActivity().getApplication();
 
 			PlayerCountChange();
@@ -115,7 +118,7 @@ public class MainScoreCardActivity extends Activity
 			for (int id = 0; id < app.getPlayerCount(); id++) {
 				TextView txt = mainView.findViewById(textidArray[id]);
                 txt.setText(String.format(app.getLocale(), "%d",
-						(Integer)app.getPlayerScoreData().get(id).getFinalScore()));
+						app.getPlayerScoreData().get(id).getFinalScore()));
 			}			
 		}
 
